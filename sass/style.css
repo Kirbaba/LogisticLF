@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,400italic&subset=latin,cyrillic-ext);
+.fotorama__arr {
+  width: 28px;
+  height: 44px;
+  background: url("../img/Layer-48.png");
+  background-repeat: no-repeat; }
+  .fotorama__arr--next {
+    opacity: 1 !important;
+    display: block !important;
+    transform: none !important;
+    right: 5%; }
+  .fotorama__arr--prev {
+    opacity: 1 !important;
+    display: block !important;
+    transform: none !important;
+    background: url("../img/Layer-48-1.png");
+    left: 5%; }
+
+.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr,
+.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon {
+  opacity: 1; }
+
+.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--prev {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none; }
+
+.fotorama__nav-wrap {
+  margin-top: -60px;
+  height: 60px; }
+
+.fotorama__dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff; }
+
+.fotorama__nav__frame.fotorama__active .fotorama__dot {
+  width: 10px;
+  height: 10px;
+  background-color: #FFF;
+  border: none;
+  border: 1px solid #fff; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff;
+  min-width: 1167px;
+  font-family: "Roboto", sans-serif; }
+
+.contain {
+  width: 1137px;
+  display: block;
+  margin: 0 auto;
+  position: relative; }
+  .contain:before, .contain:after {
+    display: table;
+    content: " "; }
+  .contain:after {
+    clear: both; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: none; }
+
+ul {
+  list-style-type: none; }
+
+.navigation {
+  float: right;
+  display: block; }
+  .navigation ul {
+    list-style-type: none;
+    padding: 0; }
+    .navigation ul li {
+      display: inline-block;
+      padding-left: 45px; }
+      .navigation ul li a {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: #FFF; }
+
+.header {
+  display: block;
+  position: absolute;
+  z-index: 9;
+  padding: 25px 0;
+  float: left;
+  width: 100%; }
+  .header__logo {
+    display: block;
+    float: left;
+    width: 15%; }
+    .header__logo img {
+      width: 100%; }
+  .header__menu {
+    display: block;
+    float: right;
+    width: 85%; }
+    .header__menu__phone {
+      display: block;
+      float: right;
+      width: 100%;
+      text-align: right;
+      color: #FFF; }
+      .header__menu__phone-icon {
+        display: block;
+        float: left;
+        width: 21px;
+        height: 20px;
+        margin-right: 15px;
+        background-image: url("../img/Layer-41.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain; }
+      .header__menu__phone h3 {
+        display: block;
+        float: right;
+        font-size: 20px;
+        margin-bottom: 5px; }
+      .header__menu__phone p {
+        display: block;
+        float: right;
+        font-size: 13px;
+        margin: 0;
+        width: 100%; }
+
+.first {
+  width: 100%;
+  display: block; }
+  .first__onslide {
+    display: block;
+    width: 80%;
+    margin: 220px auto; }
+    .first__onslide h1 {
+      color: #FFF;
+      font-family: "Roboto Slab", serif;
+      text-align: center;
+      font-size: 43px;
+      margin-bottom: 25px; }
+    .first__onslide p {
+      color: #FFF;
+      font-size: 18px;
+      margin-top: 15px;
+      text-align: center;
+      font-weight: 300; }
+  .first__more {
+    width: 158px;
+    height: 50px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -o-background-clip: padding-box;
+    background-clip: padding-box;
+    display: block;
+    margin: 90px auto 0;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
+    .first__more:hover {
+      text-decoration: none;
+      color: gray;
+      background: white; }
+
+/*# sourceMappingURL=style.css.map */

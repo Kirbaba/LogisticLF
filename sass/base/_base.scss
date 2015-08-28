@@ -1,0 +1,36 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #fff;
+	min-width: 1167px;
+	font-family: $rob;
+}
+
+.contain {
+	width: 1167px - 30px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	&:before,
+	&:after{		
+		display: table;
+  		content: " ";
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+a {
+	text-decoration: none;
+	&:hover, &:focus, &:active{
+		outline: none;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+

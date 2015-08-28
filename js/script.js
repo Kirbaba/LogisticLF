@@ -54,3 +54,10 @@ $(function() {
     });
 });
 
+var fotoramaAPI = $('.fotorama').data('fotorama');
+$('.leftArrow').click(function(){
+    fotoramaAPI.show('<');
+});
+$('.rightArrow').click(function(){
+    fotoramaAPI.show('>');
+});
