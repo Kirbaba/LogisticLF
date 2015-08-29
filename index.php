@@ -38,8 +38,7 @@
 		</div>	
 	</header>
 
-	<section class="first">
-		
+	<section class="first">		
 		<div class="fotorama" data-minwidth="100%" data-ratio="2560/1400" data-fit="cover" data-autoplay="true" >
 			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80-1.png">
 				<div class="first__onslide">
@@ -52,11 +51,29 @@
 			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80-1.png">Two</div>
 			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80-1.png">Three</div>
 		</div>
-
-	
-
 	</section>
    
+   <section class="serv">
+   	<div class="contain">
+   		<div class="serv__block">
+   			<h1>Услуги</h1>
+   			<div class="serv__block--line"></div>
+   			<div class="serv__block--single">
+   				<img src="<?php bloginfo('template_directory'); ?>/img/Share-copy.png" alt="">
+   				<p>Кросс-докинг</p>
+   			</div>
+   			<div class="serv__block--single">
+   				<img src="<?php bloginfo('template_directory'); ?>/img/Briefcase.png" alt="">
+   				<p>3PL</p>
+   			</div>
+   			<div class="serv__block--single">
+   				<img src="<?php bloginfo('template_directory'); ?>/img/Layers.png" alt="">
+   				<p>Склад</p>
+   			</div>
+   			<a href="#nowhere" class="serv__block--but">Все услуги</a>
+   		</div>
+   	</div>
+   </section>
 <?php wp_footer(); ?>
 </body>
 </html>

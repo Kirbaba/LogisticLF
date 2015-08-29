@@ -182,4 +182,73 @@ ul {
       color: gray;
       background: white; }
 
+.serv {
+  display: block;
+  width: 100%;
+  position: relative; }
+  .serv__block {
+    width: 70%;
+    display: block;
+    position: relative;
+    margin: 50px auto;
+    background-image: url("../img/Layer-57.png");
+    background-repeat: no-repeat;
+    background-position: 0 15px;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; }
+    .serv__block h1 {
+      font-family: "Roboto Slab", serif;
+      text-align: center;
+      font-size: 35px;
+      margin: 0 0 10px; }
+    .serv__block--single {
+      display: inline-block;
+      width: 33%; }
+      .serv__block--single img {
+        display: block;
+        width: 153px;
+        height: 154px;
+        margin: 0 auto 20px; }
+      .serv__block--single p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600; }
+    .serv__block--but {
+      width: 158px;
+      height: 50px;
+      border: 2px solid #dd0027;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      color: #dd0027;
+      font-family: "Roboto";
+      font-size: 14px;
+      display: block;
+      margin: 85px auto 0;
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
+      text-transform: uppercase;
+      font-weight: 600;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear; }
+      .serv__block--but:hover {
+        text-decoration: none;
+        color: #fff;
+        background: #dd0027; }
+    .serv__block--line {
+      width: 48px;
+      height: 5px;
+      display: block;
+      margin: 0 auto 45px;
+      background-color: #1D1F23;
+      border: 1px solid #555658; }
+
 /*# sourceMappingURL=style.css.map */

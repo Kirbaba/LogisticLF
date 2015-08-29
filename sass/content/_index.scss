@@ -42,3 +42,74 @@
 		}
 	}
 }
+
+.serv {
+	display: block;
+	width: 100%;
+	position: relative;
+	&__block {
+		width: 70%;
+		display: block;
+		position: relative;
+		margin: 50px auto;
+		background-image: url("../img/Layer-57.png");
+		background-repeat: no-repeat;
+		background-position: 0 15px;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		h1 {
+			font-family: $slab;
+			text-align: center;
+			font-size: 35px;
+			margin: 0 0 10px;
+		}
+		&--single {
+			display: inline-block;
+			width: 33%;
+			img {
+				display: block;
+				width: 153px;
+				height: 154px;
+				margin: 0 auto 20px;
+			}
+			p {
+				text-align: center;
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+
+		&--but {
+			width: 158px;
+			height: 50px;
+			border: 2px solid #dd0027;
+			@include border-radius(2px);
+			@include background-clip(padding-box);
+			color: #dd0027;
+			font-family: "Roboto";
+			font-size: 14px;
+			display: block;
+			margin: 85px auto 0;
+			text-decoration: none;
+			text-align: center;
+			line-height: 50px;
+			text-transform: uppercase;
+			font-weight: 600;
+			@include transition(0.5s);
+			&:hover {
+				text-decoration: none;
+				color: #fff;
+				background: #dd0027;
+			}
+		}
+		&--line {
+			width: 48px;
+			height: 5px;
+			display: block;
+			margin: 0 auto 45px;
+			background-color: #1D1F23;
+			border: 1px solid #555658;
+		}
+	}
+}
