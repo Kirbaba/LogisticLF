@@ -185,7 +185,8 @@ ul {
 .serv {
   display: block;
   width: 100%;
-  position: relative; }
+  position: relative;
+  background-color: #F7F5F0; }
   .serv__block {
     width: 70%;
     display: block;
@@ -250,5 +251,67 @@ ul {
       margin: 0 auto 45px;
       background-color: #1D1F23;
       border: 1px solid #555658; }
+
+.geo {
+  display: block;
+  position: relative;
+  padding: 85px 0;
+  width: 100%;
+  float: left;
+  background-color: #24252F; }
+  .geo__map {
+    display: block;
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 353px;
+    background-image: url("../img/findcity.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: center; }
+  .geo__text {
+    display: block;
+    float: left;
+    position: relative;
+    width: 50%;
+    color: #fff; }
+    .geo__text h1 {
+      font-family: "Roboto Slab", serif;
+      font-size: 32px;
+      margin-top: 15px;
+      margin-bottom: 25px; }
+    .geo__text p {
+      font-size: 18px;
+      display: block;
+      width: 70%;
+      font-weight: 200;
+      line-height: 30px; }
+    .geo__text--but {
+      width: 204px;
+      height: 50px;
+      border: 2px solid #fff;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      -o-background-clip: padding-box;
+      background-clip: padding-box;
+      margin: 50px 0;
+      display: block;
+      color: #FFF;
+      font-size: 14px;
+      text-align: center;
+      line-height: 50px;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear; }
+      .geo__text--but:hover {
+        text-decoration: none;
+        color: gray;
+        background: white; }
 
 /*# sourceMappingURL=style.css.map */
