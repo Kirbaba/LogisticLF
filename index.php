@@ -77,15 +77,44 @@
 
    <section class="geo">
    	<div class="geo__map"></div>
-   	<div class="geo__text">
-   		<h1>География</h1>
-   		<p>Компания «Логистик Л7» оказывает логистические услуги
-на территории Перми и Пермского края, Республики Удмуртия,
-Екатеринбурга и Свердловской области и осуществляет
-грузоперевозки и экспедирование по всей территории России</p> 	
-<a href="#nowhere" class="geo__text--but">НАЙТИ СВОЙ ГОРОД</a>		
-   	</div>
-   </section>		
+		<div class="geo__text">
+			<h1>География</h1>
+			<p>Компания «Логистик Л7» оказывает логистические услуги
+			на территории Перми и Пермского края, Республики Удмуртия,
+			Екатеринбурга и Свердловской области и осуществляет
+			грузоперевозки и экспедирование по всей территории России</p> 	
+			<a href="#nowhere" class="geo__text--but">НАЙТИ СВОЙ ГОРОД</a>		
+		</div>
+   </section>	
+
+   <section class="adv">
+   			<div class="contain">
+   				<h1>Преимущества</h1>
+   				<div class="serv__block--line"></div>
+   				<div class="adv__block">
+   					<div class="adv__block--item1">
+   						<img src="<?php bloginfo('template_directory'); ?>/img/Group-2 copy.png" alt="">
+   						<p>Собственный автопарк
+						из 70 автомобилей</p>
+   					</div>
+   					<div class="adv__block--item2">
+   						<img src="<?php bloginfo('template_directory'); ?>/img/Map-copy.png" alt="">
+   						<p>17 тысяч точек доставок
+						еженедельно</p>
+   					</div>
+   					<div class="adv__block--item3">
+   						<img src="<?php bloginfo('template_directory'); ?>/img/Drawer-copy.png" alt="">
+   						<p>Собственные склады
+						класса А</p>
+   					</div>
+   					<div class="adv__block--item4">
+   						<img src="<?php bloginfo('template_directory'); ?>/img/Friends-copy.png" alt="">
+   						<p>Команда более<br>
+						300 профессионалов</p>
+   					</div>
+   				</div>
+   			</div>
+   		</section>		
 <?php wp_footer(); ?>
 </body>
 </html>

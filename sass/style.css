@@ -314,4 +314,54 @@ ul {
         color: gray;
         background: white; }
 
+.adv {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+  background-color: #F7F5F0; }
+  .adv h1 {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 10px; }
+  .adv__block {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    background-image: url("../img/Layer-8.png");
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+    height: 250px;
+    margin-bottom: 75px; }
+    .adv__block--item1, .adv__block--item2, .adv__block--item3, .adv__block--item4 {
+      width: 14%;
+      display: block;
+      float: left;
+      position: absolute;
+      left: 15px;
+      bottom: 0; }
+      .adv__block--item1 img, .adv__block--item2 img, .adv__block--item3 img, .adv__block--item4 img {
+        width: 124px;
+        height: 124px;
+        display: block;
+        margin: 0 auto; }
+      .adv__block--item1 p, .adv__block--item2 p, .adv__block--item3 p, .adv__block--item4 p {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: 0; }
+    .adv__block--item2 {
+      bottom: 70px;
+      left: 315px; }
+    .adv__block--item3 {
+      bottom: 10px;
+      left: 635px; }
+    .adv__block--item4 {
+      bottom: 70px;
+      left: inherit;
+      right: 15px; }
+
 /*# sourceMappingURL=style.css.map */
