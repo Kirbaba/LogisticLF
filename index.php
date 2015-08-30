@@ -114,7 +114,19 @@
    					</div>
    				</div>
    			</div>
-   		</section>		
+   		</section>	
+
+   		<section class="about">
+   						<div class="contain">
+   							<h1>О нас</h1>
+   							<div class="serv__block--line"></div>
+   							<p>Мы делаем доступными сырье и товары, снижая издержки наших клиентов. 
+							Мы транслируем передовой
+							опыт и обеспечиваем лучший уровень сервиса. 
+							Мы инвестируем в людей и технологии.</p>
+   							<a href="#nowhere" class="about--but">ЧИТАТЬ ДАЛЕЕ</a>
+   						</div>
+   					</section>			
 <?php wp_footer(); ?>
 </body>
 </html>
