@@ -15,6 +15,7 @@
     display: block !important;
     transform: none !important;
     background: url("../img/Layer-48-1.png");
+    background-repeat: no-repeat;
     left: 5%; }
 
 .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr,
@@ -43,6 +44,14 @@
   background-color: #FFF;
   border: none;
   border: 1px solid #fff; }
+
+.proj .fotorama__arr {
+  margin-top: -50px;
+  background: url("../img/Full-screen.png");
+  background-repeat: no-repeat; }
+  .proj .fotorama__arr--prev {
+    background: url("../img/Full-screen-l.png");
+    background-repeat: no-repeat; }
 
 html,
 body {
@@ -215,7 +224,7 @@ ul {
         text-align: center;
         font-size: 18px;
         font-weight: 600; }
-    .serv__block--but, .about--but {
+    .serv__block--but, .about--but, .proj__block--text--but {
       width: 158px;
       height: 50px;
       border: 2px solid #dd0027;
@@ -240,7 +249,7 @@ ul {
       -ms-transition: all 0.5s linear;
       -o-transition: all 0.5s linear;
       transition: all 0.5s linear; }
-      .serv__block--but:hover, .about--but:hover {
+      .serv__block--but:hover, .about--but:hover, .proj__block--text--but:hover {
         text-decoration: none;
         color: #fff;
         background: #dd0027; }
@@ -389,5 +398,60 @@ ul {
     color: #1D1F23; }
   .about--but {
     margin-top: 50px; }
+
+.proj {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 50px 0 25px; }
+  .proj h1 {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 10px;
+    color: #1D1F23; }
+  .proj__block {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 320px; }
+    .proj__block--text {
+      display: block;
+      float: left;
+      width: 45%;
+      position: relative; }
+      .proj__block--text img {
+        max-width: 25%; }
+      .proj__block--text p {
+        font-size: 18px;
+        color: #1c1e22;
+        margin-top: 50px;
+        padding-right: 145px; }
+      .proj__block--text--but {
+        margin-top: 50px;
+        width: 139px;
+        margin-left: 0; }
+    .proj__block--img {
+      display: block;
+      float: left;
+      width: 55%;
+      position: relative; }
+      .proj__block--img--box {
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        height: 285px;
+        -webkit-box-shadow: 0px 15px 15px 0px rgba(185, 185, 185, 0.85);
+        -moz-box-shadow: 0px 15px 15px 0px rgba(185, 185, 185, 0.85);
+        box-shadow: 0px 15px 15px 0px rgba(185, 185, 185, 0.85); }
+        .proj__block--img--box img {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          position: relative; }
 
 /*# sourceMappingURL=style.css.map */

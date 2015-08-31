@@ -61,3 +61,14 @@ $('.leftArrow').click(function(){
 $('.rightArrow').click(function(){
     fotoramaAPI.show('>');
 });
+
+jQuery(document).ready(function($) {
+    var img = $('.proj_thumb');    
+    img.each(function(){
+        var heightEl = $(this).height();
+        var topEl = (285 - heightEl)/2 ;
+        $(this).css({
+            top: topEl        
+        });
+    });  
+});

@@ -115,6 +115,34 @@
    				</div>
    			</div>
    		</section>	
+      
+      <section class="proj">        
+        <h1>Наши проекты</h1>
+        <div class="serv__block--line"></div>        
+          <div class="fotorama" data-minwidth="100%" data-height="350" data-nav="false">
+            <div class="proj__block">
+              <div class="contain">
+                <div class="proj__block--text">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/nestle.png" alt="">
+                  <p>Разработка маршрута доставки
+                    вкусняшек от Нестле </p>
+                    <a href="#nowhere" class="proj__block--text--but">О ПРОЕКТЕ</a>
+                </div>
+                <div class="proj__block--img">
+                  <div class="proj__block--img--box">
+                    <img class="proj_thumb" src="<?php bloginfo('template_directory'); ?>/img/Layer-7.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proj__block">
+              <div class="contain">
+                <div class="proj__block--text"></div>
+                <div class="proj__block--img"></div>
+              </div>
+            </div>            
+        </div>        
+      </section>
 
    		<section class="about">
    						<div class="contain">

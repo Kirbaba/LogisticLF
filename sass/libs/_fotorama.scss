@@ -16,6 +16,7 @@
 		display: block!important;
 		transform: none!important;
 		background: url("../img/Layer-48-1.png");
+		background-repeat: no-repeat;
 		left: 5%;
 	}
 }
@@ -50,4 +51,16 @@
 	background-color: #FFF;
 	border: none;
 	border: 1px solid #fff;
+}
+
+.proj {
+	.fotorama__arr { 
+		margin-top: -50px;
+		background: url("../img/Full-screen.png");
+		background-repeat: no-repeat;
+		&--prev {
+			background: url("../img/Full-screen-l.png");
+			background-repeat: no-repeat;
+		}
+	}
 }
