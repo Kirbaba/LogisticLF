@@ -203,7 +203,28 @@
             <img src="<?php bloginfo('template_directory'); ?>/img/Layer-20.png" alt="">
           </div>
         </div>
-      </section> 		
+      </section>
+
+      <section class="questions">
+            <div class="contain">
+              <h1>Остались вопросы?</h1>
+              <div class="serv__block--line"></div>
+              <div class="questions__block">
+                <form action="#nowhere">
+                  <div class="questions__block--left">
+                    <input type="text" class="questions__block--inp" placeholder="Ваше имя">
+                    <input type="text" class="questions__block--inp" placeholder="Почта или телефон для ответа">
+                  </div>
+                  <div class="questions__block--right">
+                    <textarea name="mes" class="questions__block--txt" placeholder="Сообщение"></textarea>
+                  </div>
+                  <input type="submit" class="questions__block--sub" value="ОТПРАВИТЬ">
+                </form>
+              </div>
+            </div>
+          </section>		
+
+          
 <?php wp_footer(); ?>
 </body>
 </html>
