@@ -1,0 +1,37 @@
+.footer {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 25px 0;
+	&__logo {
+		@extend .header__logo;
+	}
+	&__menu{
+		display: block;
+		float: left;
+		width: 67%;
+		position: relative;
+		color: #1D1F23;
+		padding: 0 55px;
+	}
+	&__phone {
+		display: block;
+		float: left;
+		width: 17%;
+		color: #1D1F23;
+		&-icon {
+			@extend .header__menu__phone-icon;
+			background-image: url("../img/Layer-64-1.png");
+		}
+		h3 {
+			margin: 0;
+			font-size: 19px;
+			text-align: right;
+		}
+		p {
+			text-align: right;
+			margin-top: 5px;
+		}
+	}
+}

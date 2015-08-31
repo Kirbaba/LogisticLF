@@ -198,6 +198,9 @@
 		background-image: url("../img/Layer-8.png");
 		background-repeat: no-repeat;
 		background-position: 50% 35%;
+		-webkit-background-size: 84%;
+		     -o-background-size: 84%;
+		        background-size: 84%;
 		height: 250px;
 		margin-bottom: 75px;
 		&--item1 {
@@ -382,7 +385,7 @@
 	float: left;
 	position: relative;
 	width: 100%;
-	padding: 50px 0 105px;
+	padding: 50px 0 130px;
 	h1 {
 		font-family: $slab;
 		text-align: center;

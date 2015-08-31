@@ -93,7 +93,7 @@
    				<div class="serv__block--line"></div>
    				<div class="adv__block">
    					<div class="adv__block--item1">
-   						<img src="<?php bloginfo('template_directory'); ?>/img/Group-2 copy.png" alt="">
+   						<img src="<?php bloginfo('template_directory'); ?>/img/Group-2-copy.png" alt="">
    						<p>Собственный автопарк
 						из 70 автомобилей</p>
    					</div>
@@ -224,7 +224,31 @@
             </div>
           </section>		
 
-          
+          <footer class="footer">
+            <div class="contain"> 
+              <div class="footer__logo">
+                <a href="#nowhere">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/logo_footer.png" alt="">
+                </a>
+              </div>
+              <div class="footer__menu">
+                <nav class="navigation">
+                  <ul>
+                    <li><a href="#nowhere">О компании </a></li>
+                    <li><a href="#nowhere">Услуги</a></li>
+                    <li><a href="#nowhere">География</a></li>
+                    <li><a href="#nowhere">Обратная связь </a></li>
+                    <li><a href="#nowhere">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__phone">
+                <h3><span class="footer__phone-icon"></span>8 (342) 218-17-10</h3>
+                <p>Телефон в Перми</p>
+              </div>
+              
+            </div>  
+          </footer>
 <?php wp_footer(); ?>
 </body>
 </html>

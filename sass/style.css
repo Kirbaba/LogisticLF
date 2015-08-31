@@ -4,7 +4,10 @@
   width: 28px;
   height: 44px;
   background: url("../img/Layer-48.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
   .fotorama__arr--next {
     opacity: 1 !important;
     display: block !important;
@@ -16,7 +19,10 @@
     transform: none !important;
     background: url("../img/Layer-48-1.png");
     background-repeat: no-repeat;
-    left: 5%; }
+    left: 5%;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; }
 
 .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr,
 .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon {
@@ -48,10 +54,16 @@
 .proj .fotorama__arr {
   margin-top: -50px;
   background: url("../img/Full-screen.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
   .proj .fotorama__arr--prev {
     background: url("../img/Full-screen-l.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; }
 
 html,
 body {
@@ -97,6 +109,11 @@ ul {
         font-weight: bold;
         color: #FFF; }
 
+.footer .navigation {
+  float: left; }
+  .footer .navigation ul li a {
+    color: #1D1F23; }
+
 .header {
   display: block;
   position: absolute;
@@ -104,11 +121,11 @@ ul {
   padding: 25px 0;
   float: left;
   width: 100%; }
-  .header__logo {
+  .header__logo, .footer__logo {
     display: block;
     float: left;
     width: 15%; }
-    .header__logo img {
+    .header__logo img, .footer__logo img {
       width: 100%; }
   .header__menu {
     display: block;
@@ -120,7 +137,7 @@ ul {
       width: 100%;
       text-align: right;
       color: #FFF; }
-      .header__menu__phone-icon {
+      .header__menu__phone-icon, .footer__phone-icon {
         display: block;
         float: left;
         width: 21px;
@@ -143,6 +160,34 @@ ul {
         font-size: 13px;
         margin: 0;
         width: 100%; }
+
+.footer {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 25px 0; }
+  .footer__menu {
+    display: block;
+    float: left;
+    width: 67%;
+    position: relative;
+    color: #1D1F23;
+    padding: 0 55px; }
+  .footer__phone {
+    display: block;
+    float: left;
+    width: 17%;
+    color: #1D1F23; }
+    .footer__phone-icon {
+      background-image: url("../img/Layer-64-1.png"); }
+    .footer__phone h3 {
+      margin: 0;
+      font-size: 19px;
+      text-align: right; }
+    .footer__phone p {
+      text-align: right;
+      margin-top: 5px; }
 
 .first {
   width: 100%;
@@ -344,6 +389,9 @@ ul {
     background-image: url("../img/Layer-8.png");
     background-repeat: no-repeat;
     background-position: 50% 35%;
+    -webkit-background-size: 84%;
+    -o-background-size: 84%;
+    background-size: 84%;
     height: 250px;
     margin-bottom: 75px; }
     .adv__block--item1, .adv__block--item2, .adv__block--item3, .adv__block--item4 {
@@ -498,7 +546,7 @@ ul {
   float: left;
   position: relative;
   width: 100%;
-  padding: 50px 0 105px; }
+  padding: 50px 0 130px; }
   .questions h1 {
     font-family: "Roboto Slab", serif;
     text-align: center;
