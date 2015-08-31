@@ -454,4 +454,39 @@ ul {
           overflow: hidden;
           position: relative; }
 
+.trust {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 50px 0; }
+  .trust__block {
+    width: 130px;
+    height: 130px;
+    line-height: 112px;
+    display: block;
+    float: left;
+    margin: 16px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -o-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #f7f5ef;
+    padding-right: 5px; }
+    .trust__block:before {
+      content: "";
+      display: inline-block;
+      min-height: inherit;
+      height: 100%;
+      vertical-align: middle; }
+  .trust h1 {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 10px;
+    color: #1D1F23; }
+
 /*# sourceMappingURL=style.css.map */
