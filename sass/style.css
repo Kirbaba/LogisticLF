@@ -23,6 +23,9 @@
     -webkit-background-size: contain;
     -o-background-size: contain;
     background-size: contain; }
+  .fotorama__arr--disabled {
+    display: none !important;
+    opacity: 0 !important; }
 
 .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr,
 .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon {
@@ -64,6 +67,9 @@
     -webkit-background-size: contain;
     -o-background-size: contain;
     background-size: contain; }
+
+.fotorama__arr--prev .fotorama__arr--disabled {
+  display: none !important; }
 
 html,
 body {
@@ -300,7 +306,7 @@ ul {
         background: #dd0027; }
     .serv__block--line {
       width: 48px;
-      height: 5px;
+      height: 2px;
       display: block;
       margin: 0 auto 45px;
       background-color: #1D1F23;

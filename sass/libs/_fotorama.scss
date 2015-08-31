@@ -24,6 +24,11 @@
 		     -o-background-size: contain;
 		        background-size: contain;
 	}
+
+	&--disabled {
+		display: none!important;
+		opacity: 0!important;
+	}
 }
 
 .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr, 
@@ -72,6 +77,14 @@
 			-webkit-background-size: contain;
 			     -o-background-size: contain;
 			        background-size: contain;
+		}
+	}
+}
+
+.fotorama__arr {
+	&--prev {
+		.fotorama__arr--disabled {
+			display: none!important;
 		}
 	}
 }

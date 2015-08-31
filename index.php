@@ -23,10 +23,10 @@
 			<div class="header__menu">
 				<nav class="navigation">
 					<ul>
-						<li><a href="#nowhere">О компании </a></li>
-						<li><a href="#nowhere">Услуги</a></li>
-						<li><a href="#nowhere">География</a></li>
-						<li><a href="#nowhere">Обратная связь </a></li>
+						<li><a href="#to_about" class="smoothScroll">О компании </a></li>
+						<li><a href="#to_serv"  class="smoothScroll">Услуги</a></li>
+						<li><a href="#to_geo"  class="smoothScroll">География</a></li>
+						<li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>
 						<li><a href="#nowhere">Контакты</a></li>
 					</ul>
 				</nav>
@@ -48,11 +48,33 @@
 					<a href="#nowhere" class="first__more">Подробнее</a>
 				</div>
 			</div>
-			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80-1.png">Two</div>
-			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80-1.png">Three</div>
+			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80.png">
+        <div class="first__onslide">
+          <h1>Кросс-докинг</h1>
+          <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
+            без размещения в зоне долговременного хранения.</p> 
+          <a href="#nowhere" class="first__more">Подробнее</a>
+        </div>
+      </div>
+			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-48-3.png">
+        <div class="first__onslide">
+          <h1>Кросс-докинг</h1>
+          <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
+            без размещения в зоне долговременного хранения.</p> 
+          <a href="#nowhere" class="first__more">Подробнее</a>
+        </div>
+      </div>
+      <div data-img="<?php bloginfo('template_directory'); ?>/img/predlagaem.png">
+        <div class="first__onslide">
+          <h1>Кросс-докинг</h1>
+          <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
+            без размещения в зоне долговременного хранения.</p> 
+          <a href="#nowhere" class="first__more">Подробнее</a>
+        </div>
+      </div>
 		</div>
 	</section>
-   
+   <a name="to_serv" id="to_serv"></a>
    <section class="serv">
    	<div class="contain">
    		<div class="serv__block">
@@ -74,8 +96,9 @@
    		</div>
    	</div>
    </section>
-
+    
    <section class="geo">
+    <a id="to_geo" name="to_geo"></a>
    	<div class="geo__map"></div>
 		<div class="geo__text">
 			<h1>География</h1>
@@ -145,6 +168,7 @@
       </section>
 
    		<section class="about">
+        <a name="to_about" id="to_about"></a>
 				<div class="contain">
 					<h1>О нас</h1>
 					<div class="serv__block--line"></div>
@@ -206,6 +230,7 @@
       </section>
 
       <section class="questions">
+        <a name=="to_cont" id="to_cont"></a>
             <div class="contain">
               <h1>Остались вопросы?</h1>
               <div class="serv__block--line"></div>
@@ -234,10 +259,10 @@
               <div class="footer__menu">
                 <nav class="navigation">
                   <ul>
-                    <li><a href="#nowhere">О компании </a></li>
-                    <li><a href="#nowhere">Услуги</a></li>
-                    <li><a href="#nowhere">География</a></li>
-                    <li><a href="#nowhere">Обратная связь </a></li>
+                    <li><a href="#to_about" class="smoothScroll">О компании </a></li>
+                    <li><a href="#to_serv"  class="smoothScroll">Услуги</a></li>
+                    <li><a href="#to_geo"  class="smoothScroll">География</a></li>
+                    <li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>
                     <li><a href="#nowhere">Контакты</a></li>
                   </ul>
                 </nav>
