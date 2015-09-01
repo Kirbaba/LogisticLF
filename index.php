@@ -23,7 +23,15 @@
 			<div class="header__menu">
 				<nav class="navigation">
 					<ul>
-						<li><a href="#to_about" class="smoothScroll">О компании </a></li>
+						<li><a href="#nowhere" class="smoothScroll">О компании </a>
+              <ul>
+                <li><a href="">История</a></li>
+                <li><a href="">Автопарк</a></li>
+                <li><a href="">Склады</a></li>
+                <li><a href="">Наши партнеры</a></li>
+                <li><a href="">Презинтация</a></li>
+              </ul>
+            </li>
 						<li><a href="#to_serv"  class="smoothScroll">Услуги</a></li>
 						<li><a href="#to_geo"  class="smoothScroll">География</a></li>
 						<li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,cyrillic-ext);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,400italic&subset=latin,cyrillic-ext);
 .fotorama__arr {
@@ -114,6 +115,31 @@ ul {
         font-family: "Roboto", sans-serif;
         font-weight: bold;
         color: #FFF; }
+      .navigation ul li ul {
+        display: none; }
+      .navigation ul li:hover > ul {
+        display: block;
+        background: #dd0027;
+        position: absolute;
+        padding: 10px;
+        margin-top: 5px;
+        z-index: 9; }
+        .navigation ul li:hover > ul li {
+          display: block;
+          padding: 10px 5px;
+          font-size: 13px;
+          font-weight: 200; }
+        .navigation ul li:hover > ul:after {
+          content: '';
+          position: absolute;
+          /* ╨Р╨▒╤Б╨╛╨╗╤О╤В╨╜╨╛╨╡ ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ */
+          left: 40px;
+          top: -20px;
+          /* ╨Я╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╤В╤А╨╡╤Г╨│╨╛╨╗╤М╨╜╨╕╨║╨░ */
+          border: 10px solid transparent;
+          /* ╨Я╤А╨╛╨╖╤А╨░╤З╨╜╤Л╨╡ ╨│╤А╨░╨╜╨╕╤Ж╤Л */
+          border-bottom: 10px solid #dd0027;
+          /* ╨Ф╨╛╨▒╨░╨▓╨╗╤П╨╡╨╝ ╤В╤А╨╡╤Г╨│╨╛╨╗╤М╨╜╨╕╨║ */ }
 
 .footer .navigation {
   float: left; }
@@ -122,6 +148,8 @@ ul {
 
 .pageHeader .navigation ul li a {
   color: #1D1F23; }
+.pageHeader .navigation ul li ul li a {
+  color: #FFF; }
 
 .header {
   display: block;
