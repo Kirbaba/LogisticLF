@@ -1,0 +1,31 @@
+.sidebar {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 15px 15px 5px 15px;
+	@include border-radius(10px);
+	@include background-clip(padding-box);
+	background-color: #df0027;
+	ul {
+		padding: 0;
+		a {			
+			text-decoration: none;
+			li {
+				text-transform: uppercase;
+				color: #fff;
+				font-size: 15px;
+				font-weight: 200;
+				border-bottom: 1px solid #E94D69;
+				padding: 10px 5px;
+				&:hover {
+					color: darken(#fff, 25%);
+				}
+			}
+			&:last-of-type {
+				li {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

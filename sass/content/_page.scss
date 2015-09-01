@@ -1,0 +1,44 @@
+.page {
+	display: block;
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+	&__side {
+		display: block;
+		float: left;
+		position: relative;
+		width: 22%;
+	}
+	&__content {
+		display: block;
+		float: left;
+		width: 78%;
+		position: relative;
+		padding: 0 0 0 35px;
+		h1, h2, h3, h4 {
+			font-family: $slab;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+		h2 {
+			font-size: 28px;
+		}
+		p {
+			font-size: 18px;
+			margin: 15px 0;
+		}
+		ul {
+			list-style-image: url("../img/Ellipse-1.png");
+			padding: 0 0 0 15px;
+			li {
+				margin: 15px 0 15px 5px;
+				font-size: 18px;
+				padding-left: 15px;
+				&:before {
+					color: #B2B2B2;
+				}
+			}
+		}
+	}
+}

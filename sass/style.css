@@ -120,6 +120,9 @@ ul {
   .footer .navigation ul li a {
     color: #1D1F23; }
 
+.pageHeader .navigation ul li a {
+  color: #1D1F23; }
+
 .header {
   display: block;
   position: absolute;
@@ -127,11 +130,11 @@ ul {
   padding: 25px 0;
   float: left;
   width: 100%; }
-  .header__logo, .footer__logo {
+  .header__logo, .pageHeader__logo, .footer__logo {
     display: block;
     float: left;
     width: 15%; }
-    .header__logo img, .footer__logo img {
+    .header__logo img, .pageHeader__logo img, .footer__logo img {
       width: 100%; }
   .header__menu {
     display: block;
@@ -143,7 +146,7 @@ ul {
       width: 100%;
       text-align: right;
       color: #FFF; }
-      .header__menu__phone-icon, .footer__phone-icon {
+      .header__menu__phone-icon, .pageHeader__phone-icon, .footer__phone-icon {
         display: block;
         float: left;
         width: 21px;
@@ -166,6 +169,38 @@ ul {
         font-size: 13px;
         margin: 0;
         width: 100%; }
+
+.pageHeader {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 20px 0 0;
+  margin: 0;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(185, 185, 185, 0.7);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(185, 185, 185, 0.7);
+  box-shadow: 0px 10px 5px 0px rgba(185, 185, 185, 0.7); }
+  .pageHeader__menu {
+    display: block;
+    float: left;
+    width: 67%;
+    position: relative;
+    color: #1D1F23;
+    padding: 0 55px; }
+  .pageHeader__phone {
+    display: block;
+    float: left;
+    width: 17%;
+    color: #1D1F23; }
+    .pageHeader__phone-icon {
+      background-image: url("../img/Layer-64-1.png"); }
+    .pageHeader__phone h3 {
+      margin: 0;
+      font-size: 19px;
+      text-align: right; }
+    .pageHeader__phone p {
+      text-align: right;
+      margin-top: 5px; }
 
 .footer {
   display: block;
@@ -618,5 +653,69 @@ ul {
       display: block;
       float: left;
       width: 50%; }
+
+.page {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 50px 0; }
+  .page__side {
+    display: block;
+    float: left;
+    position: relative;
+    width: 22%; }
+  .page__content {
+    display: block;
+    float: left;
+    width: 78%;
+    position: relative;
+    padding: 0 0 0 35px; }
+    .page__content h1, .page__content h2, .page__content h3, .page__content h4 {
+      font-family: "Roboto Slab", serif;
+      margin-top: 0;
+      margin-bottom: 15px; }
+    .page__content h2 {
+      font-size: 28px; }
+    .page__content p {
+      font-size: 18px;
+      margin: 15px 0; }
+    .page__content ul {
+      list-style-image: url("../img/Ellipse-1.png");
+      padding: 0 0 0 15px; }
+      .page__content ul li {
+        margin: 15px 0 15px 5px;
+        font-size: 18px;
+        padding-left: 15px; }
+        .page__content ul li:before {
+          color: #B2B2B2; }
+
+.sidebar {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 15px 15px 5px 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -o-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #df0027; }
+  .sidebar ul {
+    padding: 0; }
+    .sidebar ul a {
+      text-decoration: none; }
+      .sidebar ul a li {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 200;
+        border-bottom: 1px solid #E94D69;
+        padding: 10px 5px; }
+        .sidebar ul a li:hover {
+          color: #bfbfbf; }
+      .sidebar ul a:last-of-type li {
+        border-bottom: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@
 	<header class="header">	
 		<div class="contain">	
 			<div class="header__logo">
-				<a href="#nowhere">
+				<a href="<?php echo get_home_url();?>">
 					<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
 				</a>
 			</div>
@@ -252,7 +252,7 @@
           <footer class="footer">
             <div class="contain"> 
               <div class="footer__logo">
-                <a href="#nowhere">
+                <a href="<?php echo get_home_url();?>">
                   <img src="<?php bloginfo('template_directory'); ?>/img/logo_footer.png" alt="">
                 </a>
               </div>
@@ -270,8 +270,7 @@
               <div class="footer__phone">
                 <h3><span class="footer__phone-icon"></span>8 (342) 218-17-10</h3>
                 <p>Телефон в Перми</p>
-              </div>
-              
+              </div>              
             </div>  
           </footer>
 <?php wp_footer(); ?>
