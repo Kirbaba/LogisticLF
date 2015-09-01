@@ -298,6 +298,11 @@ ul {
       text-align: center;
       font-size: 35px;
       margin: 0 0 10px; }
+    .serv__block a {
+      text-decoration: none;
+      color: #1D1F23; }
+      .serv__block a:hover {
+        opacity: 0.9; }
     .serv__block--single {
       display: inline-block;
       width: 33%; }
