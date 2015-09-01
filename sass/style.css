@@ -694,6 +694,15 @@ ul {
         padding-left: 15px; }
         .page__content ul li:before {
           color: #B2B2B2; }
+  .page__thumb {
+    display: block;
+    float: left;
+    position: relative;
+    width: 25%;
+    margin: 5px 25px 15px 0; }
+    .page__thumb img {
+      width: 100%;
+      height: auto; }
 
 .sidebar {
   display: block;
