@@ -32,10 +32,10 @@
                 <li><a href="">Презинтация</a></li>
               </ul>
             </li>
-						<li><a href="#to_serv"  class="smoothScroll">Услуги</a></li>
-						<li><a href="#to_geo"  class="smoothScroll">География</a></li>
+						<li><a href="<?php echo get_permalink(11); ?>">Услуги</a></li>
+						<li><a href="<?php echo get_permalink(13); ?>">География</a></li>
 						<li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>
-						<li><a href="#nowhere">Контакты</a></li>
+						<li><a href="<?php echo get_permalink(15); ?>">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="header__menu__phone">
@@ -103,7 +103,7 @@
    				<p>Склад</p>
    			</div>
         </a>
-   			<a href="#nowhere" class="serv__block--but">Все услуги</a>
+   			<a href="<?php echo get_permalink(11); ?>" class="serv__block--but">Все услуги</a>
    		</div>
 
    	</div>
@@ -118,7 +118,7 @@
 			на территории Перми и Пермского края, Республики Удмуртия,
 			Екатеринбурга и Свердловской области и осуществляет
 			грузоперевозки и экспедирование по всей территории России</p> 	
-			<a href="#nowhere" class="geo__text--but">НАЙТИ СВОЙ ГОРОД</a>		
+			<a href="<?php echo get_permalink(13); ?>" class="geo__text--but">НАЙТИ СВОЙ ГОРОД</a>		
 		</div>
    </section>	
 
@@ -188,7 +188,7 @@
   					Мы транслируем передовой
   					опыт и обеспечиваем лучший уровень сервиса. 
   					Мы инвестируем в людей и технологии.</p>
-					<a href="#nowhere" class="about--but">ЧИТАТЬ ДАЛЕЕ</a>
+					<a href="<?php echo get_permalink(9); ?>" class="about--but">ЧИТАТЬ ДАЛЕЕ</a>
 				</div>
 			</section>	
 
@@ -299,11 +299,11 @@
               <div class="footer__menu">
                 <nav class="navigation">
                   <ul>
-                    <li><a href="#to_about" class="smoothScroll">О компании </a></li>
-                    <li><a href="#to_serv"  class="smoothScroll">Услуги</a></li>
-                    <li><a href="#to_geo"  class="smoothScroll">География</a></li>
+                    <li><a href="<?php echo get_permalink(9); ?>" class="smoothScroll">О компании </a></li>
+                    <li><a href="<?php echo get_permalink(11); ?>"  class="smoothScroll">Услуги</a></li>
+                    <li><a href="<?php echo get_permalink(13); ?>"  class="smoothScroll">География</a></li>
                     <li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>
-                    <li><a href="#nowhere">Контакты</a></li>
+                    <li><a href="<?php echo get_permalink(15); ?>">Контакты</a></li>
                   </ul>
                 </nav>
               </div>
