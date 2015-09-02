@@ -65,6 +65,7 @@ add_action('admin_menu', 'admin_menu');
 function admin_menu(){
     add_menu_page( 'Настройки главного слайдера', 'Главный слайдер', 'manage_options', 'main_slider', 'main_slider' );
     add_menu_page( 'Настройки слайдера "Наши проекты"', 'Наши проекты', 'manage_options', 'our_projects', 'our_projects' );
+    add_menu_page( 'Настройки блока "Нам доверяют"', 'Нам доверяют', 'manage_options', 'trust_us', 'trust_us' );
 }
 
 // load script to admin
@@ -208,3 +209,63 @@ function our_projects_sc(){
     return $generate;
 }
 add_shortcode('our_projects', 'our_projects_sc');
+
+//Наши проекты (админка)
+function trust_us(){
+    global $wpdb;
+
+    if (function_exists('wp_enqueue_media')) {
+        wp_enqueue_media();
+    } else {
+        wp_enqueue_style('thickbox');
+        wp_enqueue_script('media-upload');
+        wp_enqueue_script('thickbox');
+    }
+
+    if(isset($_GET['del_block'])){
+        $wpdb->delete('trust_us',array("id" => $_GET['del_block']));
+        $message = "Блок успешно удален!";
+    }
+
+    if(isset($_POST['attachment_url'])){
+        $wpdb->insert('trust_us', array("img_url" => $_POST['attachment_url'],
+            "url" => $_POST['url']));
+        $message = "Блок успешно добавлен!";
+        echo mysql_error();
+    }
+
+
+    $generate = '';
+
+    $blocks = $wpdb->get_results("SELECT * FROM trust_us");
+    foreach ($blocks as $block) {
+        $generate .= "<tr>
+            <td style='padding-right: 10px'><img src='". $block->img_url. "' alt='' style='width: 50px;'/></td>
+            <td style='padding-right: 10px'><a href='". $block->url ."'>". $block->url ."</a></td>
+            <td><a href='/wp-admin/admin.php?page=trust_us&del_block=$block->id'>Удалить</a></td>
+        </tr>";
+    }
+
+
+    $parser = new Parser();
+    $parser->parse(TM_DIR."/views/admin_trust.php",array('slides'=>$generate,
+        'message'=>$message), true);
+}
+//Наши проекты (шорткод)
+function trust_us_sc(){
+    global $wpdb;
+
+    $generate = "";
+
+    $blocks = $wpdb->get_results("SELECT * FROM trust_us");
+    foreach ($blocks as $block) {
+        $generate .= '<a href="'.$block->url .'">
+          <div class="trust__block">
+            <img src="'.$block->img_url.'" alt="">
+          </div>
+          </a>';
+    }
+
+    return $generate;
+}
+add_shortcode('trust_us', 'trust_us_sc');

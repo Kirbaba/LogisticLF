@@ -145,76 +145,7 @@
         <div class="contain">
           <h1>Нам доверяют</h1>
           <div class="serv__block--line"></div>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-11.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-12.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-13.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-14.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-15.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-16.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-17.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-21.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-22.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-24.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-23.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-18.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-19.png" alt="">
-          </div>
-          </a>
-          <a href="#nowhere">
-          <div class="trust__block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/Layer-20.png" alt="">
-          </div>
-          </a>
+          <?= do_shortcode('[trust_us]');?>
         </div>
       </section>
 
