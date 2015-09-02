@@ -543,6 +543,7 @@ ul {
       display: block;
       float: left;
       width: 45%;
+      padding-left: 5%;
       position: relative; }
       .proj__block--text img {
         max-width: 25%; }
@@ -561,9 +562,8 @@ ul {
       width: 55%;
       position: relative; }
       .proj__block--img--box {
-        width: 95%;
+        width: 85%;
         display: block;
-        margin: 0 auto;
         overflow: hidden;
         position: relative;
         height: 285px;

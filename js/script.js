@@ -63,12 +63,14 @@ $('.rightArrow').click(function(){
 });
 
 jQuery(document).ready(function($) {
-    var img = $('.proj_thumb');    
+    var img = $('.proj_thumb');   
+    setTimeout(function() {  
     img.each(function(){
         var heightEl = $(this).height();
         var topEl = (285 - heightEl)/2 ;
         $(this).css({
             top: topEl        
         });
-    });  
+    }); 
+   }, 3000); 
 });

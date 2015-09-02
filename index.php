@@ -17,7 +17,7 @@
 		<div class="contain">	
 			<div class="header__logo">
 				<a href="<?php echo get_home_url();?>">
-					<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
+				  <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
 				</a>
 			</div>
 			<div class="header__menu">
@@ -48,7 +48,7 @@
 
 	<section class="first">		
 		<div class="fotorama" data-minwidth="100%" data-ratio="2560/1400" data-fit="cover" data-autoplay="true" >
-			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80-1.png">
+			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80-1.jpg">
 				<div class="first__onslide">
 					<h1>Кросс-докинг</h1>
 					<p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
@@ -56,7 +56,7 @@
 					<a href="#nowhere" class="first__more">Подробнее</a>
 				</div>
 			</div>
-			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80.png">
+			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80.jpg">
         <div class="first__onslide">
           <h1>Кросс-докинг</h1>
           <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
@@ -64,7 +64,7 @@
           <a href="#nowhere" class="first__more">Подробнее</a>
         </div>
       </div>
-			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-48-3.png">
+			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-48-3.jpg">
         <div class="first__onslide">
           <h1>Кросс-докинг</h1>
           <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
@@ -72,7 +72,7 @@
           <a href="#nowhere" class="first__more">Подробнее</a>
         </div>
       </div>
-      <div data-img="<?php bloginfo('template_directory'); ?>/img/predlagaem.png">
+      <div data-img="<?php bloginfo('template_directory'); ?>/img/predlagaem.jpg">
         <div class="first__onslide">
           <h1>Кросс-докинг</h1>
           <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="proj__block--img">
                   <div class="proj__block--img--box">
-                    <img class="proj_thumb" src="<?php bloginfo('template_directory'); ?>/img/Layer-7.png" alt="">
+                    <img class="proj_thumb" src="<?php bloginfo('template_directory'); ?>/img/Layer-7.jpg" alt="">
                   </div>
                 </div>
               </div>
