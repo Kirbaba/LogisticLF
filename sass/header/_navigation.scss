@@ -51,6 +51,26 @@
 				a {
 					color: #1D1F23;
 				}
+				&:hover > ul {
+				    bottom: 45px;
+					&:after {
+						content: '';
+						position: absolute;
+						left: 40px;
+						top: inherit;
+						bottom: -20px;
+						border: 10px solid transparent;
+						border-top: 10px solid #dd0027;
+						border-bottom: 10px solid transparent;
+					}							    
+				} 
+				ul {
+					li {
+						a {
+							color: #FFF;
+						}
+					}
+				}				
 			}
 		}
 	}

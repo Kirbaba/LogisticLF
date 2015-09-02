@@ -23,13 +23,13 @@
 			<div class="header__menu">
 				<nav class="navigation">
 					<ul>
-						<li><a href="#nowhere" class="smoothScroll">О компании </a>
+						<li><a href="<?php echo get_permalink(9); ?>">О компании </a>
               <ul>
-                <li><a href="">История</a></li>
-                <li><a href="">Автопарк</a></li>
-                <li><a href="">Склады</a></li>
-                <li><a href="">Наши партнеры</a></li>
-                <li><a href="">Презинтация</a></li>
+                <li><a href="<?php echo get_permalink(18); ?>">История</a></li>
+                  <li><a href="<?php echo get_permalink(20); ?>">Автопарк</a></li>
+                  <li><a href="<?php echo get_permalink(22); ?>">Склады</a></li>
+                  <li><a href="<?php echo get_permalink(24); ?>">Наши партнеры</a></li>
+                  <li><a href="<?php echo get_permalink(26); ?>">Презинтация</a></li>
               </ul>
             </li>
 						<li><a href="<?php echo get_permalink(11); ?>">Услуги</a></li>
@@ -275,16 +275,17 @@
               <h1>Остались вопросы?</h1>
               <div class="serv__block--line"></div>
               <div class="questions__block">
-                <form action="#nowhere">
-                  <div class="questions__block--left">
-                    <input type="text" class="questions__block--inp" placeholder="Ваше имя">
-                    <input type="text" class="questions__block--inp" placeholder="Почта или телефон для ответа">
-                  </div>
-                  <div class="questions__block--right">
-                    <textarea name="mes" class="questions__block--txt" placeholder="Сообщение"></textarea>
-                  </div>
-                  <input type="submit" class="questions__block--sub" value="ОТПРАВИТЬ">
-                </form>
+              <!--   <form action="#nowhere">
+                <div class="questions__block--left">
+                  <input type="text" class="questions__block--inp" placeholder="Ваше имя">
+                  <input type="text" class="questions__block--inp" placeholder="Почта или телефон для ответа">
+                </div>
+                <div class="questions__block--right">
+                  <textarea name="mes" class="questions__block--txt" placeholder="Сообщение"></textarea>
+                </div>
+                <input type="submit" class="questions__block--sub" value="ОТПРАВИТЬ">
+              </form> -->
+                <?php echo do_shortcode("[contact-form-7 id='29' title='Form']"); ?>
               </div>
             </div>
           </section>		
@@ -299,9 +300,17 @@
               <div class="footer__menu">
                 <nav class="navigation">
                   <ul>
-                    <li><a href="<?php echo get_permalink(9); ?>" class="smoothScroll">О компании </a></li>
-                    <li><a href="<?php echo get_permalink(11); ?>"  class="smoothScroll">Услуги</a></li>
-                    <li><a href="<?php echo get_permalink(13); ?>"  class="smoothScroll">География</a></li>
+                    <li><a href="<?php echo get_permalink(9); ?>" class="smoothScroll">О компании </a>
+                      <ul>
+                        <li><a href="<?php echo get_permalink(18); ?>">История</a></li>
+                        <li><a href="<?php echo get_permalink(20); ?>">Автопарк</a></li>
+                        <li><a href="<?php echo get_permalink(22); ?>">Склады</a></li>
+                        <li><a href="<?php echo get_permalink(24); ?>">Наши партнеры</a></li>
+                        <li><a href="<?php echo get_permalink(26); ?>">Презинтация</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="<?php echo get_permalink(11); ?>">Услуги</a></li>
+                    <li><a href="<?php echo get_permalink(13); ?>">География</a></li>
                     <li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>
                     <li><a href="<?php echo get_permalink(15); ?>">Контакты</a></li>
                   </ul>
