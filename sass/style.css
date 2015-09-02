@@ -671,7 +671,7 @@ ul {
       font-weight: 200;
       font-size: 18px; }
       .questions__block--inp:last-of-type {
-        margin-bottom: 0; }
+        margin-bottom: 22px; }
     .questions__block--txt {
       display: block;
       width: 95%;
@@ -679,7 +679,7 @@ ul {
       padding-top: 15px;
       font-size: 18px;
       height: 152px;
-      margin: 0 auto;
+      margin: 0 auto 22px;
       color: #1D1F23;
       font-weight: 200;
       border: 1px solid rgba(196, 196, 196, 0.3);
