@@ -48,38 +48,7 @@
 
 	<section class="first">		
 		<div class="fotorama" data-minwidth="100%" data-ratio="2560/1400" data-fit="cover" data-autoplay="true" >
-			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80-1.jpg">
-				<div class="first__onslide">
-					<h1>Кросс-докинг</h1>
-					<p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
-						без размещения в зоне долговременного хранения.</p>	
-					<a href="#nowhere" class="first__more">Подробнее</a>
-				</div>
-			</div>
-			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-80.jpg">
-        <div class="first__onslide">
-          <h1>Кросс-докинг</h1>
-          <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
-            без размещения в зоне долговременного хранения.</p> 
-          <a href="#nowhere" class="first__more">Подробнее</a>
-        </div>
-      </div>
-			<div data-img="<?php bloginfo('template_directory'); ?>/img/Layer-48-3.jpg">
-        <div class="first__onslide">
-          <h1>Кросс-докинг</h1>
-          <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
-            без размещения в зоне долговременного хранения.</p> 
-          <a href="#nowhere" class="first__more">Подробнее</a>
-        </div>
-      </div>
-      <div data-img="<?php bloginfo('template_directory'); ?>/img/predlagaem.jpg">
-        <div class="first__onslide">
-          <h1>Кросс-докинг</h1>
-          <p>Приёмка и отгрузка товаров и грузов через склад напрямую,<br>
-            без размещения в зоне долговременного хранения.</p> 
-          <a href="#nowhere" class="first__more">Подробнее</a>
-        </div>
-      </div>
+          <?= do_shortcode('[main_slider]');?>
 		</div>
 	</section>
    <a name="to_serv" id="to_serv"></a>
