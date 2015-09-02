@@ -64,6 +64,7 @@ add_action('admin_menu', 'admin_menu');
 
 function admin_menu(){
     add_menu_page( 'Настройки главного слайдера', 'Главный слайдер', 'manage_options', 'main_slider', 'main_slider' );
+    add_menu_page( 'Настройки слайдера "Наши проекты"', 'Наши проекты', 'manage_options', 'our_projects', 'our_projects' );
 }
 
 // load script to admin
@@ -137,4 +138,73 @@ function main_slider_sc(){
 }
 add_shortcode('main_slider', 'main_slider_sc');
 
+//Наши проекты (админка)
+function our_projects(){
+    global $wpdb;
 
+    if (function_exists('wp_enqueue_media')) {
+        wp_enqueue_media();
+    } else {
+        wp_enqueue_style('thickbox');
+        wp_enqueue_script('media-upload');
+        wp_enqueue_script('thickbox');
+    }
+
+    if(isset($_GET['del_slide'])){
+        $wpdb->delete('our_projects',array("id" => $_GET['del_slide']));
+        $message = "Слайд успешно удален!";
+    }
+
+    if(isset($_POST['attachment_url'])){
+        $wpdb->insert('our_projects', array("img_url" => $_POST['attachment_url'],
+            "logo_url" => $_POST['logo_url'],"description" => $_POST['description'],"url" => $_POST['url'],));
+        $message = "Слайд успешно добавлен!";
+        echo mysql_error();
+    }
+
+
+    $generate = '';
+
+    $slides = $wpdb->get_results("SELECT * FROM our_projects");
+    foreach ($slides as $slide) {
+        $generate .= "<tr>
+            <td style='padding-right: 10px'><img src='". $slide->logo_url. "' alt='' style='width: 50px;'/></td>
+            <td style='padding-right: 10px'>". $slide->description ."</td>
+            <td style='padding-right: 10px'><a href='". $slide->url ."'>". $slide->url ."</a></td>
+            <td style='padding-right: 10px'><img src='". $slide->img_url. "' alt='' style='width: 50px;'/></td>
+            <td><a href='/wp-admin/admin.php?page=our_projects&del_slide=$slide->id'>Удалить</a></td>
+        </tr>";
+    }
+
+
+    $parser = new Parser();
+    $parser->parse(TM_DIR."/views/admin_projects.php",array('slides'=>$generate,
+        'message'=>$message), true);
+}
+//Наши проекты (шорткод)
+function our_projects_sc(){
+    global $wpdb;
+
+    $generate = "";
+
+    $slides = $wpdb->get_results("SELECT * FROM our_projects");
+    foreach ($slides as $slide) {
+        $generate .= '<div class="proj__block">
+              <div class="contain">
+                <div class="proj__block--text">
+                  <img src="'.$slide->logo_url.'" alt="">
+                  <p>' .$slide->description. ' </p>
+                    <a href="' .$slide->url. '" class="proj__block--text--but">О ПРОЕКТЕ</a>
+                </div>
+                <div class="proj__block--img">
+                  <div class="proj__block--img--box">
+                    <img class="proj_thumb" src="' .$slide->img_url. '" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>';
+    }
+
+    return $generate;
+}
+add_shortcode('our_projects', 'our_projects_sc');
