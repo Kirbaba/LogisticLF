@@ -21,23 +21,24 @@
 				</a>
 			</div>
 			<div class="header__menu">
-				<nav class="navigation">
-					<ul>
-						<li><a href="<?php echo get_permalink(9); ?>">О компании </a>
-              <ul>
-                <li><a href="<?php echo get_permalink(18); ?>">История</a></li>
-                  <li><a href="<?php echo get_permalink(20); ?>">Автопарк</a></li>
-                  <li><a href="<?php echo get_permalink(22); ?>">Склады</a></li>
-                  <li><a href="<?php echo get_permalink(24); ?>">Наши партнеры</a></li>
-                  <li><a href="<?php echo get_permalink(26); ?>">Презинтация</a></li>
-              </ul>
-            </li>
-						<li><a href="<?php echo get_permalink(11); ?>">Услуги</a></li>
-						<li><a href="<?php echo get_permalink(13); ?>">География</a></li>
-						<li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>
-						<li><a href="<?php echo get_permalink(15); ?>">Контакты</a></li>
-					</ul>
-				</nav>
+                <?php wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') ); ?>
+<!--				<nav class="navigation">-->
+<!--					<ul>-->
+<!--						<li><a href="--><?php //echo get_permalink(9); ?><!--">О компании </a>-->
+<!--              <ul>-->
+<!--                <li><a href="--><?php //echo get_permalink(18); ?><!--">История</a></li>-->
+<!--                  <li><a href="--><?php //echo get_permalink(20); ?><!--">Автопарк</a></li>-->
+<!--                  <li><a href="--><?php //echo get_permalink(22); ?><!--">Склады</a></li>-->
+<!--                  <li><a href="--><?php //echo get_permalink(24); ?><!--">Наши партнеры</a></li>-->
+<!--                  <li><a href="--><?php //echo get_permalink(26); ?><!--">Презинтация</a></li>-->
+<!--              </ul>-->
+<!--            </li>-->
+<!--						<li><a href="--><?php //echo get_permalink(11); ?><!--">Услуги</a></li>-->
+<!--						<li><a href="--><?php //echo get_permalink(13); ?><!--">География</a></li>-->
+<!--						<li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>-->
+<!--						<li><a href="--><?php //echo get_permalink(15); ?><!--">Контакты</a></li>-->
+<!--					</ul>-->
+<!--				</nav>-->
 				<div class="header__menu__phone">
 					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-10</h3>
 					<p>Телефон в Перми</p>
@@ -178,23 +179,25 @@
                 </a>
               </div>
               <div class="footer__menu">
-                <nav class="navigation">
-                  <ul>
-                    <li><a href="<?php echo get_permalink(9); ?>" class="smoothScroll">О компании </a>
-                      <ul>
-                        <li><a href="<?php echo get_permalink(18); ?>">История</a></li>
-                        <li><a href="<?php echo get_permalink(20); ?>">Автопарк</a></li>
-                        <li><a href="<?php echo get_permalink(22); ?>">Склады</a></li>
-                        <li><a href="<?php echo get_permalink(24); ?>">Наши партнеры</a></li>
-                        <li><a href="<?php echo get_permalink(26); ?>">Презинтация</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="<?php echo get_permalink(11); ?>">Услуги</a></li>
-                    <li><a href="<?php echo get_permalink(13); ?>">География</a></li>
-                    <li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>
-                    <li><a href="<?php echo get_permalink(15); ?>">Контакты</a></li>
-                  </ul>
-                </nav>
+                  <?php wp_nav_menu( array( 'theme_location' => 'footer_menu','container' => 'nav', 'container_class' => 'navigation') ); ?>
+
+<!--                  <nav class="navigation">-->
+<!--                  <ul>-->
+<!--                    <li><a href="--><?php //echo get_permalink(9); ?><!--" class="smoothScroll">О компании </a>-->
+<!--                      <ul>-->
+<!--                        <li><a href="--><?php //echo get_permalink(18); ?><!--">История</a></li>-->
+<!--                        <li><a href="--><?php //echo get_permalink(20); ?><!--">Автопарк</a></li>-->
+<!--                        <li><a href="--><?php //echo get_permalink(22); ?><!--">Склады</a></li>-->
+<!--                        <li><a href="--><?php //echo get_permalink(24); ?><!--">Наши партнеры</a></li>-->
+<!--                        <li><a href="--><?php //echo get_permalink(26); ?><!--">Презинтация</a></li>-->
+<!--                      </ul>-->
+<!--                    </li>-->
+<!--                    <li><a href="--><?php //echo get_permalink(11); ?><!--">Услуги</a></li>-->
+<!--                    <li><a href="--><?php //echo get_permalink(13); ?><!--">География</a></li>-->
+<!--                    <li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>-->
+<!--                    <li><a href="--><?php //echo get_permalink(15); ?><!--">Контакты</a></li>-->
+<!--                  </ul>-->
+<!--                </nav>-->
               </div>
               <div class="footer__phone">
                 <h3><span class="footer__phone-icon"></span>8 (342) 218-17-10</h3>

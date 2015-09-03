@@ -68,6 +68,12 @@ function admin_menu(){
     add_menu_page( 'Настройки блока "Нам доверяют"', 'Нам доверяют', 'manage_options', 'trust_us', 'trust_us' );
 }
 
+//nav menus wordpress
+register_nav_menus( array(
+    'header_menu' => 'Меню в шапке',
+    'footer_menu' => 'Меню в подвале'
+) );
+
 // load script to admin
 function admin_js() {
     $url = TM_URL . '/js/admin.js';
