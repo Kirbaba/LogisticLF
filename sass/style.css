@@ -114,10 +114,12 @@ span.wpcf7-not-valid-tip {
   display: block; }
   .navigation ul {
     list-style-type: none;
-    padding: 0; }
+    padding: 0;
+    transition: all .3s ease .15s; }
     .navigation ul li {
       display: inline-block;
-      padding-left: 45px; }
+      padding-left: 45px;
+      transition: all .3s ease .15s; }
       .navigation ul li a {
         text-transform: uppercase;
         font-size: 13px;
@@ -126,6 +128,12 @@ span.wpcf7-not-valid-tip {
         color: #FFF; }
       .navigation ul li ul {
         display: none; }
+      .navigation ul li:hover {
+        -webkit-transition: all 5s easy-out;
+        -moz-transition: all 5s easy-out;
+        -ms-transition: all 5s easy-out;
+        -o-transition: all 5s easy-out;
+        transition: all 5s easy-out; }
       .navigation ul li:hover > ul {
         display: block;
         background: #dd0027;
@@ -145,7 +153,7 @@ span.wpcf7-not-valid-tip {
           left: 40px;
           top: -20px;
           /* ╨Я╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╤В╤А╨╡╤Г╨│╨╛╨╗╤М╨╜╨╕╨║╨░ */
-          border: 10px solid transparent;
+          border: 10px solid rgba(255, 255, 255, 0);
           /* ╨Я╤А╨╛╨╖╤А╨░╤З╨╜╤Л╨╡ ╨│╤А╨░╨╜╨╕╤Ж╤Л */
           border-bottom: 10px solid #dd0027;
           /* ╨Ф╨╛╨▒╨░╨▓╨╗╤П╨╡╨╝ ╤В╤А╨╡╤Г╨│╨╛╨╗╤М╨╜╨╕╨║ */ }

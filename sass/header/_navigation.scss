@@ -4,18 +4,27 @@
 	ul {
 		list-style-type: none;
 		padding: 0;
+		transition: all .3s ease .15s;
 		li {
 			display: inline-block;
 			padding-left: 45px;
+			transition: all .3s ease .15s;
 			a {
 				text-transform: uppercase;
 				font-size: 13px;
 				font-family: $rob;
 				font-weight: bold;
-				color: #FFF;
+				color: #FFF;			
 			}
 			ul {
 				display: none;
+			}
+			&:hover {
+			-webkit-transition: all 5s easy-out;
+			   -moz-transition: all 5s easy-out;
+			    -ms-transition: all 5s easy-out;
+			     -o-transition: all 5s easy-out;
+			        transition: all 5s easy-out;	
 			}
 			&:hover > ul {
 				display: block;
@@ -23,22 +32,22 @@
 				position: absolute;
 				padding: 10px;
 				margin-top: 5px;
-				z-index: 9;
+				z-index: 9;									
 				li {
 					display: block;
 					padding: 10px 5px;
 					font-size: 13px;
-					font-weight: 200;
+					font-weight: 200;				
 				}	
 				&:after {
 					content: ''; 
 					position: absolute; /* Абсолютное позиционирование */
 					left: 40px; 
 					top: -20px; /* Положение треугольника */
-					border: 10px solid transparent; /* Прозрачные границы */
+					border: 10px solid rgba(255, 255, 255, 0); /* Прозрачные границы */
 					border-bottom: 10px solid #dd0027; /* Добавляем треугольник */
-				}			
-			}			
+				}							
+			}					
 		}
 	}
 }

@@ -74,3 +74,14 @@ jQuery(document).ready(function($) {
     }); 
    }, 3000); 
 });
+
+$(document).ready(function()
+              {   $('li').hover(function(){
+                        var timer = $(this).data('timer');
+                        if(timer) clearTimeout(timer);
+                        $(this).addClass('hover');
+                      },function(){
+                        var li = $(this);
+                        li.data('timer', setTimeout(function(){ li.removeClass('hover'); }, 700));
+                      });
+              });
