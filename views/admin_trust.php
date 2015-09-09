@@ -6,9 +6,7 @@
 <table class="admin-table">
     <tr>
         <td valign="top" style="padding-right: 20px">
-            <form action="/wp-admin/admin.php?page=trust_us" method="post" name="trust_us">
-                <p><b>Укажите ссылку:</b><br>
-                <p><input type="text" name="url" value=""></p>
+            <form class="trust_us" action="/wp-admin/admin.php?page=trust_us" method="post" name="trust_us">
                 <p><b>Выберите изображение:</b><br>
                 <p><img class="custom_media_image" src="" alt="" style="width: 80px;"></p>
                 <p><button class="custom_media_upload">Загрузить</button></p>
@@ -25,11 +23,8 @@
                     <td style="padding-right: 10px">
                         <p>Изображение :</p>
                     </td>
-                    <td style="padding-right: 10px">
-                        <p>Ссылка :</p>
-                    </td>
                     <td>
-                        <p>Удалить</p>
+                        <p>Опции</p>
                     </td>
                 </tr>
                 {slides}

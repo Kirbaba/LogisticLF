@@ -100,9 +100,16 @@ function main_slider(){
     }
 
     if(isset($_POST['attachment_url'])){
-        $wpdb->insert('main_slider', array("img_url" => $_POST['attachment_url'],
-            "title" => $_POST['title'],"description" => $_POST['description'],"url" => $_POST['url'],));
-        $message = "Слайд успешно добавлен!";
+        if(isset($_POST['changed'])){
+            $wpdb->update('main_slider',array("img_url" => $_POST['attachment_url'],
+                "title" => $_POST['title'],"description" => $_POST['description'],"url" => $_POST['url']), array('id' => $_POST['changed']));
+            $message = "Слайд успешно обновлен!";
+        }else{
+            $wpdb->insert('main_slider', array("img_url" => $_POST['attachment_url'],
+                "title" => $_POST['title'],"description" => $_POST['description'],"url" => $_POST['url'],));
+            $message = "Слайд успешно добавлен!";
+        }
+
         echo mysql_error();
     }
 
@@ -111,12 +118,13 @@ function main_slider(){
 
     $slides = $wpdb->get_results("SELECT * FROM main_slider");
     foreach ($slides as $slide) {
-        $generate .= "<tr>
-            <td style='padding-right: 10px'><img src='". $slide->img_url. "' alt='' style='width: 50px;'/></td>
-            <td>". $slide->title ."</td>
-            <td>". $slide->description ."</td>
-            <td><a href='". $slide->url ."'>". $slide->url ."</a></td>
-            <td><a href='/wp-admin/admin.php?page=main_slider&del_slide=$slide->id'>Удалить</a></td>
+        $generate .= "<tr data-slide-id='".$slide->id."'>
+            <td class='curr_img' style='padding-right: 10px'><img  src='". $slide->img_url. "' alt='' style='width: 50px;'/></td>
+            <td class='curr_title'>". $slide->title ."</td>
+            <td class='curr_description'>". $slide->description ."</td>
+            <td class='curr_url' ><a href='". $slide->url ."'>". $slide->url ."</a></td>
+            <td><a href='#' class='change_slide'>Редактировать</a>
+            <a href='/wp-admin/admin.php?page=main_slider&del_slide=$slide->id'>Удалить</a></td>
         </tr>";
     }
 
@@ -164,9 +172,16 @@ function our_projects(){
     }
 
     if(isset($_POST['attachment_url'])){
-        $wpdb->insert('our_projects', array("img_url" => $_POST['attachment_url'],
-            "logo_url" => $_POST['logo_url'],"description" => $_POST['description'],"url" => $_POST['url'],));
-        $message = "Слайд успешно добавлен!";
+        if(isset($_POST['changed'])){
+            $wpdb->update('our_projects', array("img_url" => $_POST['attachment_url'],
+                "logo_url" => $_POST['logo_url'],"description" => $_POST['description'],"url" => $_POST['url']), array('id' => $_POST['changed']));
+            $message = "Слайд успешно обновлен!";
+        }else{
+            $wpdb->insert('our_projects', array("img_url" => $_POST['attachment_url'],
+                "logo_url" => $_POST['logo_url'],"description" => $_POST['description'],"url" => $_POST['url'],));
+            $message = "Слайд успешно добавлен!";
+        }
+
         echo mysql_error();
     }
 
@@ -175,12 +190,15 @@ function our_projects(){
 
     $slides = $wpdb->get_results("SELECT * FROM our_projects");
     foreach ($slides as $slide) {
-        $generate .= "<tr>
-            <td style='padding-right: 10px'><img src='". $slide->logo_url. "' alt='' style='width: 50px;'/></td>
-            <td style='padding-right: 10px'>". $slide->description ."</td>
-            <td style='padding-right: 10px'><a href='". $slide->url ."'>". $slide->url ."</a></td>
-            <td style='padding-right: 10px'><img src='". $slide->img_url. "' alt='' style='width: 50px;'/></td>
-            <td><a href='/wp-admin/admin.php?page=our_projects&del_slide=$slide->id'>Удалить</a></td>
+        $generate .= "<tr data-slide-id='".$slide->id."'>
+            <td class='curr_logo' style='padding-right: 10px'><img src='". $slide->logo_url. "' alt='' style='width: 50px;'/></td>
+            <td class='curr_description' style='padding-right: 10px'>". $slide->description ."</td>
+            <td class='curr_url' style='padding-right: 10px'><a href='". $slide->url ."'>". $slide->url ."</a></td>
+            <td class='curr_img' style='padding-right: 10px'><img src='". $slide->img_url. "' alt='' style='width: 50px;'/></td>
+            <td>
+                <a href='#' class='change_project'>Редактировать</a>
+                <a href='/wp-admin/admin.php?page=our_projects&del_slide=$slide->id'>Удалить</a>
+            </td>
         </tr>";
     }
 
@@ -235,9 +253,15 @@ function trust_us(){
     }
 
     if(isset($_POST['attachment_url'])){
-        $wpdb->insert('trust_us', array("img_url" => $_POST['attachment_url'],
-            "url" => $_POST['url']));
-        $message = "Блок успешно добавлен!";
+
+        if(isset($_POST['changed'])){
+            $wpdb->update('trust_us', array("img_url" => $_POST['attachment_url']),array('id' => $_POST['changed']));
+            $message = "Блок успешно обновлен!";
+        }else{
+            $wpdb->insert('trust_us', array("img_url" => $_POST['attachment_url']));
+            $message = "Блок успешно добавлен!";
+        }
+
         echo mysql_error();
     }
 
@@ -246,10 +270,11 @@ function trust_us(){
 
     $blocks = $wpdb->get_results("SELECT * FROM trust_us");
     foreach ($blocks as $block) {
-        $generate .= "<tr>
-            <td style='padding-right: 10px'><img src='". $block->img_url. "' alt='' style='width: 50px;'/></td>
-            <td style='padding-right: 10px'><a href='". $block->url ."'>". $block->url ."</a></td>
-            <td><a href='/wp-admin/admin.php?page=trust_us&del_block=$block->id'>Удалить</a></td>
+        $generate .= "<tr data-slide-id='".$block->id."'>
+            <td class='curr_img' style='padding-right: 10px'><img src='". $block->img_url. "' alt='' style='width: 50px;'/></td>
+            <td>
+                <a href='#' class='change_trust'>Редактировать</a>
+                <a href='/wp-admin/admin.php?page=trust_us&del_block=$block->id'>Удалить</a></td>
         </tr>";
     }
 
@@ -266,11 +291,9 @@ function trust_us_sc(){
 
     $blocks = $wpdb->get_results("SELECT * FROM trust_us");
     foreach ($blocks as $block) {
-        $generate .= '<a href="'.$block->url .'">
-          <div class="trust__block">
+        $generate .= '<div class="trust__block">
             <img src="'.$block->img_url.'" alt="">
-          </div>
-          </a>';
+          </div>';
     }
 
     return $generate;

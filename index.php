@@ -201,7 +201,7 @@
               </div>
               <div class="footer__phone">
                 <h3><span class="footer__phone-icon"></span>8 (342) 218-17-10</h3>
-                <p>Телефон в Перми</p>
+<!--                <p>Телефон в Перми</p>-->
               </div>              
             </div>  
           </footer>
