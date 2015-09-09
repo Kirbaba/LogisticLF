@@ -776,18 +776,19 @@ span.wpcf7-not-valid-tip {
   background-color: #df0027; }
   .sidebar ul {
     padding: 0; }
-    .sidebar ul a {
-      text-decoration: none; }
-      .sidebar ul a li {
+    .sidebar ul li {
+      padding: 10px 5px;
+      border-bottom: 1px solid #E94D69;}
+      .sidebar ul li a  {
+        text-decoration: none;
         text-transform: uppercase;
         color: #fff;
         font-size: 15px;
         font-weight: 200;
-        border-bottom: 1px solid #E94D69;
-        padding: 10px 5px; }
-        .sidebar ul a li:hover {
+          }
+        .sidebar ul li:hover {
           color: #bfbfbf; }
-      .sidebar ul a:last-of-type li {
+      .sidebar ul li:last-of-type {
         border-bottom: none; }
 
 /*# sourceMappingURL=style.css.map */
