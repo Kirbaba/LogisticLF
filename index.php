@@ -21,6 +21,9 @@
 				</a>
 			</div>
 			<div class="header__menu">
+				<div class="header__menu__phone">
+					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-10</h3>
+				</div>
                 <?php wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') ); ?>
 <!--				<nav class="navigation">-->
 <!--					<ul>-->
@@ -39,10 +42,7 @@
 <!--						<li><a href="--><?php //echo get_permalink(15); ?><!--">Контакты</a></li>-->
 <!--					</ul>-->
 <!--				</nav>-->
-				<div class="header__menu__phone">
-					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-10</h3>
-					<p>Телефон в Перми</p>
-				</div>
+
 			</div>	
 		</div>	
 	</header>
