@@ -118,7 +118,7 @@ span.wpcf7-not-valid-tip {
     transition: all .3s ease .15s; }
     .navigation ul li {
       display: inline-block;
-      padding-left: 45px;
+      padding-left: 35px;
       transition: all .3s ease .15s; }
       .navigation ul li a {
         text-transform: uppercase;
@@ -275,7 +275,7 @@ span.wpcf7-not-valid-tip {
     width: 67%;
     position: relative;
     color: #1D1F23;
-    padding: 0 55px; }
+    padding: 0}
   .footer__phone {
     display: block;
     float: left;

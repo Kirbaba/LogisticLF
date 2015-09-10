@@ -121,7 +121,8 @@
    			</div>
    		</section>	
       
-      <section class="proj">        
+      <section class="proj">
+		  <a id="to_proj" name="to_proj"></a>
         <h1>Наши проекты</h1>
         <div class="serv__block--line"></div>        
           <div class="fotorama" data-minwidth="100%" data-height="350" data-nav="false">
