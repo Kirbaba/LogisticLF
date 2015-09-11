@@ -24,7 +24,14 @@
 				<div class="header__menu__phone">
 					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-10</h3>
 				</div>
-                <?php wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') ); ?>
+                <?php
+					if(is_front_page()){
+						wp_nav_menu( array( 'theme_location' => 'main_menu','container' => 'nav', 'container_class' => 'navigation') );
+					}else{
+						wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') );
+
+					}
+				?>
 <!--				<nav class="navigation">-->
 <!--					<ul>-->
 <!--						<li><a href="--><?php //echo get_permalink(9); ?><!--">О компании </a>-->
@@ -180,7 +187,13 @@
                 </a>
               </div>
               <div class="footer__menu">
-                  <?php wp_nav_menu( array( 'theme_location' => 'footer_menu','container' => 'nav', 'container_class' => 'navigation') ); ?>
+				  <?php
+				  if(is_front_page()){
+					  wp_nav_menu( array( 'theme_location' => 'main_footer_menu','container' => 'nav', 'container_class' => 'navigation') );
+				  }else{
+					  wp_nav_menu( array( 'theme_location' => 'footer_menu','container' => 'nav', 'container_class' => 'navigation') );
+				  }
+				  ?>
 
 <!--                  <nav class="navigation">-->
 <!--                  <ul>-->

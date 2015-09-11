@@ -71,7 +71,9 @@ function admin_menu(){
 //nav menus wordpress
 register_nav_menus( array(
     'header_menu' => 'Меню в шапке',
+    'main_menu' => 'Меню на главной',
     'footer_menu' => 'Меню в подвале',
+    'main_footer_menu' => 'Меню на главной в подвале',
     'sidebar' => 'Боковое меню'
 ) );
 
