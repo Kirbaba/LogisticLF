@@ -392,7 +392,7 @@
 	float: left;
 	position: relative;
 	width: 100%;
-	padding: 50px 0 130px;
+	padding: 50px 0;
 	h1 {
 		font-family: $slab;
 		text-align: center;
@@ -450,9 +450,9 @@
 		
 		&--sub {
 			@extend .serv__block--but;
-			bottom: -55px;
 			position: relative;
 			background: rgba(255, 255, 255, 0);
+			margin-top: 50px;
 		}
 		&--left {
 			display: block;

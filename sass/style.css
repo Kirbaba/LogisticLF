@@ -109,9 +109,16 @@ span.wpcf7-not-valid-tip {
 .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
   margin-top: 50px; }
 
+.wpcf7-form p {
+  display: block;
+  margin: 0px auto;
+  float: left;
+  width: 100%; }
+
 .navigation {
   float: right;
-  display: block; }
+  display: block;
+  margin-top: 10px; }
   .navigation ul {
     list-style-type: none;
     padding: 0;
@@ -201,9 +208,10 @@ span.wpcf7-not-valid-tip {
     .header__menu__phone {
       display: block;
       float: right;
-      width: 100%;
+      width: 25%;
       text-align: right;
-      color: #FFF; }
+      color: #FFF;
+      margin-top: 7px; }
       .header__menu__phone-icon, .pageHeader__phone-icon, .footer__phone-icon {
         display: block;
         float: left;
@@ -220,7 +228,8 @@ span.wpcf7-not-valid-tip {
         display: block;
         float: right;
         font-size: 20px;
-        margin-bottom: 5px; }
+        margin-bottom: 0;
+        margin-top: 0; }
       .header__menu__phone p {
         display: block;
         float: right;
@@ -244,7 +253,7 @@ span.wpcf7-not-valid-tip {
     width: 67%;
     position: relative;
     color: #1D1F23;
-    padding: 0 55px; }
+    padding: 0 45px; }
   .pageHeader__phone {
     display: block;
     float: left;
@@ -272,7 +281,7 @@ span.wpcf7-not-valid-tip {
     width: 67%;
     position: relative;
     color: #1D1F23;
-    padding: 0 55px; }
+    padding: 0 48px; }
   .footer__phone {
     display: block;
     float: left;
@@ -650,7 +659,7 @@ span.wpcf7-not-valid-tip {
   float: left;
   position: relative;
   width: 100%;
-  padding: 50px 0 130px; }
+  padding: 50px 0; }
   .questions h1 {
     font-family: "Roboto Slab", serif;
     text-align: center;
@@ -709,9 +718,9 @@ span.wpcf7-not-valid-tip {
       background-color: #fff;
       resize: none; }
     .questions__block--sub {
-      bottom: -55px;
       position: relative;
-      background: rgba(255, 255, 255, 0); }
+      background: rgba(255, 255, 255, 0);
+      margin-top: 50px; }
     .questions__block--left, .questions__block--right {
       display: block;
       float: left;
