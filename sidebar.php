@@ -11,6 +11,9 @@
 <!--</div>-->
 <?php
 
-if (function_exists(clean_custom_menus())) clean_custom_menus();
+//if (function_exists(clean_custom_menus())) clean_custom_menus();
+
+ wp_nav_menu( array( 'theme_location' => 'sidebar','container' => 'div', 'container_class' => 'sidebar') );
+
 
 ?>

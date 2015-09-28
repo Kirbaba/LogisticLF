@@ -6,11 +6,11 @@
 <table class="admin-table">
     <tr>
         <td valign="top" style="padding-right: 20px">
-            <form action="/wp-admin/admin.php?page=our_projects" method="post" name="our_projects">
+            <form class="our_projects" action="/wp-admin/admin.php?page=our_projects" method="post" name="our_projects">
                 <p><b>Введите описание:</b><br>
-                <p><textarea name="description" id="" cols="30" rows="10"></textarea></p>
+                <p><textarea class="description" name="description" id="" cols="30" rows="10"></textarea></p>
                 <p><b>Укажите ссылку:</b><br>
-                <p><input type="text" name="url" value=""></p>
+                <p><input class="url" type="text" name="url" value=""></p>
                 <p><b>Выберите логотип:</b><br>
                 <p><img class="custom_media_image2" src="" alt="" style="width: 80px;"></p>
                 <p><button class="custom_media_upload2">Загрузить</button></p>
@@ -41,7 +41,7 @@
                         <p>Изображение :</p>
                     </td>
                     <td>
-                        <p>Удалить</p>
+                        <p>Опции</p>
                     </td>
                 </tr>
                 {slides}

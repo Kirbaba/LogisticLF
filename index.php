@@ -21,7 +21,17 @@
 				</a>
 			</div>
 			<div class="header__menu">
-                <?php wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') ); ?>
+				<div class="header__menu__phone">
+					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-10</h3>
+				</div>
+                <?php
+					if(is_front_page()){
+						wp_nav_menu( array( 'theme_location' => 'main_menu','container' => 'nav', 'container_class' => 'navigation') );
+					}else{
+						wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') );
+
+					}
+				?>
 <!--				<nav class="navigation">-->
 <!--					<ul>-->
 <!--						<li><a href="--><?php //echo get_permalink(9); ?><!--">О компании </a>-->
@@ -39,10 +49,7 @@
 <!--						<li><a href="--><?php //echo get_permalink(15); ?><!--">Контакты</a></li>-->
 <!--					</ul>-->
 <!--				</nav>-->
-				<div class="header__menu__phone">
-					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-10</h3>
-					<p>Телефон в Перми</p>
-				</div>
+
 			</div>	
 		</div>	
 	</header>
@@ -121,7 +128,8 @@
    			</div>
    		</section>	
       
-      <section class="proj">        
+      <section class="proj">
+		  <a id="to_proj" name="to_proj"></a>
         <h1>Наши проекты</h1>
         <div class="serv__block--line"></div>        
           <div class="fotorama" data-minwidth="100%" data-height="350" data-nav="false">
@@ -179,7 +187,13 @@
                 </a>
               </div>
               <div class="footer__menu">
-                  <?php wp_nav_menu( array( 'theme_location' => 'footer_menu','container' => 'nav', 'container_class' => 'navigation') ); ?>
+				  <?php
+				  if(is_front_page()){
+					  wp_nav_menu( array( 'theme_location' => 'main_footer_menu','container' => 'nav', 'container_class' => 'navigation') );
+				  }else{
+					  wp_nav_menu( array( 'theme_location' => 'footer_menu','container' => 'nav', 'container_class' => 'navigation') );
+				  }
+				  ?>
 
 <!--                  <nav class="navigation">-->
 <!--                  <ul>-->
@@ -201,7 +215,7 @@
               </div>
               <div class="footer__phone">
                 <h3><span class="footer__phone-icon"></span>8 (342) 218-17-10</h3>
-                <p>Телефон в Перми</p>
+<!--                <p>Телефон в Перми</p>-->
               </div>              
             </div>  
           </footer>

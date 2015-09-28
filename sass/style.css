@@ -117,15 +117,20 @@ span.wpcf7-not-valid-tip {
 
 .navigation {
   float: right;
+<<<<<<< HEAD
   display: block;
   margin-top: 10px; }
+=======
+  display: inline-block; }
+>>>>>>> origin/master
   .navigation ul {
     list-style-type: none;
     padding: 0;
     transition: all .3s ease .15s; }
     .navigation ul li {
+      padding-bottom: 10px;
       display: inline-block;
-      padding-left: 45px;
+      padding-left: 35px;
       transition: all .3s ease .15s; }
       .navigation ul li a {
         text-transform: uppercase;
@@ -206,12 +211,21 @@ span.wpcf7-not-valid-tip {
     float: right;
     width: 85%; }
     .header__menu__phone {
-      display: block;
+      margin-left: 20px;
+      display: inline-block;
       float: right;
+<<<<<<< HEAD
       width: 25%;
       text-align: right;
       color: #FFF;
       margin-top: 7px; }
+=======
+      text-align: right;
+      color: #FFF; }
+      .header__menu__phone h3{
+        margin-top: 0;
+      }
+>>>>>>> origin/master
       .header__menu__phone-icon, .pageHeader__phone-icon, .footer__phone-icon {
         display: block;
         float: left;
@@ -785,18 +799,19 @@ span.wpcf7-not-valid-tip {
   background-color: #df0027; }
   .sidebar ul {
     padding: 0; }
-    .sidebar ul a {
-      text-decoration: none; }
-      .sidebar ul a li {
+    .sidebar ul li {
+      padding: 10px 5px;
+      border-bottom: 1px solid #E94D69;}
+      .sidebar ul li a  {
+        text-decoration: none;
         text-transform: uppercase;
         color: #fff;
         font-size: 15px;
         font-weight: 200;
-        border-bottom: 1px solid #E94D69;
-        padding: 10px 5px; }
-        .sidebar ul a li:hover {
+          }
+        .sidebar ul li:hover {
           color: #bfbfbf; }
-      .sidebar ul a:last-of-type li {
+      .sidebar ul li:last-of-type {
         border-bottom: none; }
 
 /*# sourceMappingURL=style.css.map */
