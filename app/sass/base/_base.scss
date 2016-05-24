@@ -58,6 +58,8 @@ b, strong {
 	text-align: center;
 }
 
+
+
 %clearfix {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -71,4 +73,9 @@ b, strong {
 	} 
 } 
 
+.base_line {
+	float: left;
+	width: 100%;
+	@extend %clearfix;
+}
 

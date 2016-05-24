@@ -272,4 +272,78 @@
 			}
 		}
 	}
+
+	&-partner {
+		&__thumb {
+			float: left;
+			width: 50%;
+			height: 375px;
+			@include overflow-img;
+			img {
+				max-width: 125%;
+			}
+		}
+		&__preview {
+			float: left;
+			width: 50%;
+			@extend .page-projects__item_text;
+			padding: 40px;
+			padding-top: 0;
+			strong {
+				float: left;
+				width: 100%;
+				margin: 25px 0;
+				font-family: $b;
+				text: #1d1f23 26px;
+			}
+			p {
+				text: #1d1f23 26px;
+			}
+			img {
+				max-width: 50%;
+				margin-bottom: 25px;
+			}
+		}
+		&__numbers {
+			float: left;
+			width: 50%;
+			margin-bottom: 25px;
+			&_item {
+				float: left;
+				width: 50%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding-right: 25%;
+				margin: 15px 0;
+				h2 {
+					font-size: 100px;
+					color: #DF0028;
+				}
+				span {
+					font-family: $b;
+					text: #1d1f23 24px;
+				}
+			}
+		}
+		&__advantages {
+			float: left;
+			width: 50%;
+			padding-left: 40px;
+			li {
+				float: left;
+				width: 100%;
+				font-family: $b;
+				text: #1d1f23 24px;
+				margin: 25px 0;
+				padding-left: 50px;
+				background-image: url('../img/check.png');
+				background-repeat: no-repeat;
+				background-position: 0 50%;
+				-webkit-background-size: 30px 20px;
+				     -o-background-size: 30px 20px;
+				        background-size: 30px 20px;
+			}
+		}
+	}
 }
