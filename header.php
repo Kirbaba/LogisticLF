@@ -23,9 +23,9 @@ body.page-template {
  
 body.page-template:after {
   content: "";
-  background: url(<?php echo get_template_directory_uri(); ?>/img/page-bg.jpg) repeat;
+  /* background: url(<?php echo get_template_directory_uri(); ?>/img/page-bg.jpg) repeat;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-  filter: alpha(opacity=20);
+  filter: alpha(opacity=20); */
   -moz-opacity: 0.2;
   -khtml-opacity: 0.2;
   opacity: 0.2;
