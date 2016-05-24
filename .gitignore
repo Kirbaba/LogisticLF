@@ -46,5 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+app/libs/bootstrap
+app/libs/jquery
 node_modules
 

@@ -1,3 +1,12 @@
 .pageHeader__phone h3, .footer__phone h3 {
 	font-family: $b;
 }
+.pageHeader__phone {
+	margin-top: 10px;
+}
+
+.navigation ul li a {
+	font-family: $l;
+	text: #1d1f23 capitalize 24px normal;
+	font-weight: normal;
+}

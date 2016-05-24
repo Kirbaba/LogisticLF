@@ -1,0 +1,15 @@
+.footer {
+	&_copyright {
+		float: left;
+		text: #515151 24px;
+	}
+	&_link {
+		float: right;
+		display: block;
+		text: #1d1f23 24px;
+		text-decoration: underline;
+		&:hover, &:focus {
+			color: #DE0028;
+		}
+	}
+}

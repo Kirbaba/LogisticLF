@@ -1,17 +1,9 @@
           <footer class="footer">
             <div class="contain"> 
-              <div class="footer__logo">
-               <a href="<?php echo get_home_url();?>">
-                  <img src="<?php bloginfo('template_directory'); ?>/img/logo_footer.png" alt="">
-                </a>
-              </div>
-              <div class="footer__menu">
-     <?php wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') ); ?>
-              </div>
-              <div class="footer__phone">
-                <h3><span class="footer__phone-icon"></span>8 (342) 218-17-01</h3>
-          <!--  Comment    <p>Телефон в Перми</p> --> 
-              </div>              
+              <!-- open .footer_copyright -->
+              <p class="footer_copyright">© 2016 «ООО Логистик Л7»</p>
+              <!-- close .footer_copyright -->
+              <a href="#" class="footer_link">Контакты</a>
             </div>  
           </footer>
 <?php wp_footer(); ?>
