@@ -1,0 +1,50 @@
+body {
+	font-family: $l;
+}
+
+a {
+	text-decoration: none;
+	&:hover, &:focus, &:active{
+		outline: none;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+
+.block_title {
+	color: #fff;
+    font-size: 3.5em;
+	text-align: center;
+	margin-top: 15px;	
+}
+
+.p0  {
+	padding: 0;
+}
+
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $big;
+}
+
+p, a {
+	font-family: $l;
+}
+
+b, strong {
+
+	font-family: $b;
+}
+
+
+
+
+

@@ -22,7 +22,7 @@
 			</div>
 			<div class="header__menu">
 				<div class="header__menu__phone">
-					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-10</h3>
+					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-01</h3>
 				</div>
                 <?php
 					if(is_front_page()){
@@ -65,22 +65,22 @@
    		<div class="serv__block">
    			<h1>Услуги</h1>
    			<div class="serv__block--line"></div>
-   			<a href="#nowhere"><div class="serv__block--single">
+   			<a href="<?php echo get_permalink(56); ?>"><div class="serv__block--single">
    				<img src="<?php bloginfo('template_directory'); ?>/img/Share-copy.png" alt="">
    				<p>Кросс-докинг</p>
    			</div>
         </a>
-   			<a href="#nowhere"><div class="serv__block--single">
+   			<a href="<?php echo get_permalink(47); ?>"><div class="serv__block--single">
    				<img src="<?php bloginfo('template_directory'); ?>/img/Briefcase.png" alt="">
    				<p>3PL</p>
    			</div>
         </a>
-   			<a href="#nowhere"><div class="serv__block--single">
+   			<a href="<?php echo get_permalink(22); ?>"><div class="serv__block--single">
    				<img src="<?php bloginfo('template_directory'); ?>/img/Layers.png" alt="">
    				<p>Склад</p>
    			</div>
         </a>
-   			<a href="<?php echo get_permalink(11); ?>" class="serv__block--but">Все услуги</a>
+   			<a href="<?php echo get_permalink(47); ?>" class="serv__block--but">ПОДРОБНЕЕ</a>
    		</div>
 
    	</div>
@@ -91,11 +91,11 @@
    	<div class="geo__map"></div>
 		<div class="geo__text">
 			<h1>География</h1>
-			<p>Компания «Логистик Л7» оказывает логистические услуги
+			<p>Мы оказываем полный спектр логистических услуг
 			на территории Перми и Пермского края, Республики Удмуртия,
-			Екатеринбурга и Свердловской области и осуществляет
+			Екатеринбурга и Свердловской области и осуществляем
 			грузоперевозки и экспедирование по всей территории России</p> 	
-			<a href="<?php echo get_permalink(13); ?>" class="geo__text--but">НАЙТИ СВОЙ ГОРОД</a>		
+			<a href="<?php echo get_permalink(13); ?>" class="geo__text--but">ПОДРОБНЕЕ</a>		
 		</div>
    </section>	
 
@@ -106,8 +106,8 @@
    				<div class="adv__block">
    					<div class="adv__block--item1">
    						<img src="<?php bloginfo('template_directory'); ?>/img/Group-2-copy.png" alt="">
-   						<p>Собственный автопарк
-						из 70 автомобилей</p>
+   						<p>Более 100 единиц
+						собственного транспорта</p>
    					</div>
    					<div class="adv__block--item2">
    						<img src="<?php bloginfo('template_directory'); ?>/img/Map-copy.png" alt="">
@@ -127,9 +127,9 @@
    				</div>
    			</div>
    		</section>	
-      
-      <section class="proj">
-		  <a id="to_proj" name="to_proj"></a>
+   
+        <section class="proj">
+	<a id="to_proj" name="to_proj"></a> 
         <h1>Наши проекты</h1>
         <div class="serv__block--line"></div>        
           <div class="fotorama" data-minwidth="100%" data-height="350" data-nav="false">
@@ -214,7 +214,7 @@
 <!--                </nav>-->
               </div>
               <div class="footer__phone">
-                <h3><span class="footer__phone-icon"></span>8 (342) 218-17-10</h3>
+                <h3><span class="footer__phone-icon"></span>8 (342) 218-17-01</h3>
 <!--                <p>Телефон в Перми</p>-->
               </div>              
             </div>  
