@@ -26,7 +26,7 @@
 			text-decoration: underline;
 			position: relative;
 			&:hover, &:focus {
-				
+				color: #DE0028;
 			}
 			&:before {
 				content: "";
@@ -50,6 +50,113 @@
 		width: 100%;
 		img {
 			width: 100%;
+		}
+	}
+
+	&-projects {
+		margin: 25px 0;
+		&__categories {
+			float: left;
+			width: 100%;
+			margin: 25px 0 50px;
+			padding-left: 0;
+			li {
+				display: block;
+				float: left;
+				margin-right: 25px;
+				a {
+					text: #1d1f23 24px;
+					text-decoration: underline;
+					&:hover, &:focus {
+						color: #DE0028;
+					}
+				}
+			}
+		}
+		&__item {
+			float: left;
+			width: 100%;
+			margin-bottom: 25px;
+			position: relative;
+			&:nth-of-type(even) {
+				.page-projects__item_thumb {
+					float: right;
+				}
+			}
+			&:hover {
+				.page-projects__item_thumb {
+					img {
+						@include transition(.4s);
+						-webkit-transform: translate(-50%, -50%) scale(1.1);
+						   -moz-transform: translate(-50%, -50%) scale(1.1);
+						    -ms-transform: translate(-50%, -50%) scale(1.1);
+						     -o-transform: translate(-50%, -50%) scale(1.1);
+						        transform: translate(-50%, -50%) scale(1.1);
+					}
+				}
+			}
+			&_thumb {
+				float: left;
+				width: 50%;
+				height: 375px;
+				@include overflow-img;
+				position: relative;
+				img {
+					@include transition(.4s);
+				}
+			}
+			&_text {
+				float: left;
+				width: 50%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+			    padding: 25px;
+				p {
+					text: #1d1f23 30px;
+				}
+			}
+			&_title {
+				float: left;
+				width: 100%;
+				font-family: $b;
+				text: #1d1f23 30px;
+				text-decoration: underline;
+				margin-bottom: 25px;
+				&:hover, &:focus {
+					color: #DE0028;
+				}
+			}
+		}
+		&_reload {
+			display: block;
+			margin: 25px auto;
+			size: 45px;
+			background-image: url('../img/Forma-1.png');
+			background-repeat: no-repeat;
+			background-position: 50%;
+			-webkit-background-size: contain;
+						     -o-background-size: contain;
+						        background-size: contain;
+			@include transition(.4s);
+			&:hover {
+				-webkit-transform: rotate(360deg);
+				   -moz-transform: rotate(360deg);
+				    -ms-transform: rotate(360deg);
+				     -o-transform: rotate(360deg);
+				        transform: rotate(360deg);
+			}			
+		}
+		&_more {
+			display: block;
+			margin: 25px 0;
+			text-align: center;
+			font-family: $b;
+			text: #1d1f23 30px;
+			text-decoration: underline;
+			&:hover, &:focus {
+				color: #DE0028;
+			}
 		}
 	}
 }
