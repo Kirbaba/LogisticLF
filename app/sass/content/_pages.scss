@@ -237,4 +237,39 @@
 			}
 		}
 	}
+	&-single{
+		&__content{
+			float: left;
+			width: 100%;
+			h5 {
+				font-family: $b;
+				text: #1d1f23 30px; 
+				text-transform: none;
+			}
+		}
+		&__thumb {
+			float: left;
+			width: 100%;
+			margin: 15px 0 25px;
+			@include overflow-img;
+			height: 500px;
+			img {
+				max-width: 125%;
+			}
+		}
+		&__other {
+			float: left;
+			width: 100%;
+			margin: 25px 0;
+			&_item {
+				float: left;
+				width: 50%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding-right: 50px;
+				margin: 25px 0;
+			}
+		}
+	}
 }
