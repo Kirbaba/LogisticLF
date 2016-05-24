@@ -1,0 +1,55 @@
+.page-content {
+	h3 {
+		font-family: $big;
+		text: #1d1f23 uppercase 80px;
+	}
+	h4 {
+		font-family: $big;
+		text: #1d1f23 uppercase 50px;
+	}
+	p {
+		text: #1d1f23 24px;
+	}
+}
+
+
+.page{
+	&__nav {
+		float: left;
+		width: 100%;
+		display: block;
+		margin: 35px 0;
+		&_back {
+			float: left;
+			padding-left: 30px;
+			text: #1d1f23 24px;
+			text-decoration: underline;
+			position: relative;
+			&:hover, &:focus {
+				
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				-webkit-transform: translateY(-50%);
+				   -moz-transform: translateY(-50%);
+				    -ms-transform: translateY(-50%);
+				     -o-transform: translateY(-50%);
+				        transform: translateY(-50%);
+				border-right: 7px solid #1d1f23;
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+			}
+		}
+	}
+	&__infographics {
+		margin: 35px auto 50px;
+		float: left;
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+}
