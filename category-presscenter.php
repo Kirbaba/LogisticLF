@@ -40,6 +40,16 @@
 							экспедирование по всей территории России. </p>
 						</div>
 						<!-- close .page-presscenter__item -->
+
+						<!-- open .pagination -->
+						<ul class="page-pagination">
+							<li><a href="#"><span class="icon icon-arrow-left"></span></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li class="active"><a href="#">3</a></li>
+							<li><a href="#"><span class="icon icon-arrow-right"></span></a></li>
+						</ul>
+						<!-- close .pagination -->
 					</div>
 					<!-- close .page-presscenter__content -->
 					<!-- open .page-presscenter__time -->
