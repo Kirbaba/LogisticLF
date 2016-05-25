@@ -1,2 +1,27 @@
+.first__partners{
+	&_wrap {
+		width: 100%;
+		display: flex;
+		margin: 25px 0;
+		-webkit-flex-wrap: nowrap;
+		    -ms-flex-wrap: nowrap;
+		        flex-wrap: nowrap;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-align-items: center;
+		        align-items: center;
+	
+	}	
+	&_item {
+		margin: 25px;
+	}
+}
 
-
+.menu-menyu-v-shapke {
+	li {
+		color: #FFF;
+		a {
+			color: #FFF;
+		}
+	}
+}

@@ -157,6 +157,26 @@ function main_slider_sc(){
 					<h1>'.$slide->title.'</h1>
 					<p>'.$slide->description.'</p>
 					<a href="'.$slide->url.'" class="first__more">Подробнее</a>
+                    <div class="first__partners_wrap">
+                        <a href="#" class="first__partners_item">
+                            <img src="'.TM_URL.'/img/Shape-1-3.png" alt="" />
+                        </a>
+                        <a href="#" class="first__partners_item">
+                            <img src="'.TM_URL.'/img/Shape-2-1.png" alt="" />
+                        </a>
+                        <a href="#" class="first__partners_item">
+                            <img src="'.TM_URL.'/img/Shape-3.png" alt="" />
+                        </a>
+                        <a href="#" class="first__partners_item">
+                            <img src="'.TM_URL.'/img/Shape-4-1.png" alt="" />
+                        </a>
+                        <a href="#" class="first__partners_item">
+                            <img src="'.TM_URL.'/img/Shape-6.png" alt="" />
+                        </a>
+                        <a href="#" class="first__partners_item">
+                            <img src="'.TM_URL.'/img/Shape-5.png" alt="" />
+                        </a>
+                    </div>
 				</div>
 			</div>';
     }

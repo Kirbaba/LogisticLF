@@ -350,6 +350,7 @@
 	display: block;
 	position: relative;
 	float: left;
+	background-color: #FFF;
 	width: 100%;
 	padding: 50px 0;
 	&__block {
@@ -392,6 +393,7 @@
 	float: left;
 	position: relative;
 	width: 100%;
+	background-color: #FFF;
 	padding: 50px 0;
 	h1 {
 		font-family: $slab;

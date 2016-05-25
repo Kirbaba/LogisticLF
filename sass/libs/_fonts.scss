@@ -1,5 +1,87 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,cyrillic-ext);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,400italic&subset=latin,cyrillic-ext);
 
-$slab: 'Roboto Slab', serif;
-$rob: 'Roboto', sans-serif;
+$slab: 'BigNoodleTitlingCyr';
+$rob: 'HelveticaNeueCyrLight';
+
+$big: 'BigNoodleTitlingCyr';
+$l: 'HelveticaNeueCyrLight';
+$m: 'HelveticaNeueMedium';
+$th: 'HelveticaNeueCyrThin';
+$bl: 'HelveticaNeueCyrBlack';
+$b: 'HelveticaNeueCyrBold';
+$m: 'HelveticaNeueCyrMedium';
+$r: 'HelveticaNeueCyrRoman';
+
+@font-face {
+    font-family: 'BigNoodleTitlingCyr';
+    src: url('../fonts/BigNoodleTitlingCyr.eot');
+    src: url('../fonts/BigNoodleTitlingCyr.eot') format('embedded-opentype'),
+         url('../fonts/BigNoodleTitlingCyr.woff2') format('woff2'),
+         url('../fonts/BigNoodleTitlingCyr.woff') format('woff'),
+         url('../fonts/BigNoodleTitlingCyr.ttf') format('truetype'),
+         url('../fonts/BigNoodleTitlingCyr.svg#BigNoodleTitlingCyr') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrThin';
+    src: url('../fonts/Helvetica/HelveticaNeueCyrThin.eot');
+    src: url('../fonts/Helvetica/HelveticaNeueCyrThin.eot') format('embedded-opentype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrThin.woff2') format('woff2'),
+         url('../fonts/Helvetica/HelveticaNeueCyrThin.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyrThin.ttf') format('truetype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrThin.svg#HelveticaNeueCyrThin') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrLight';
+    src: url('../fonts/Helvetica/HelveticaNeueCyrLight.eot');
+    src: url('../fonts/Helvetica/HelveticaNeueCyrLight.eot') format('embedded-opentype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrLight.woff2') format('woff2'),
+         url('../fonts/Helvetica/HelveticaNeueCyrLight.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyrLight.ttf') format('truetype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrLight.svg#HelveticaNeueCyrLight') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrBlack';
+    src: url('../fonts/Helvetica/HelveticaNeueCyrBlack.eot');
+    src: url('../fonts/Helvetica/HelveticaNeueCyrBlack.eot') format('embedded-opentype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrBlack.woff2') format('woff2'),
+         url('../fonts/Helvetica/HelveticaNeueCyrBlack.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyrBlack.ttf') format('truetype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrBlack.svg#HelveticaNeueCyrBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrBold';
+    src: url('../fonts/Helvetica/HelveticaNeueCyrBold.eot');
+    src: url('../fonts/Helvetica/HelveticaNeueCyrBold.eot') format('embedded-opentype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrBold.woff2') format('woff2'),
+         url('../fonts/Helvetica/HelveticaNeueCyrBold.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyrBold.ttf') format('truetype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrBold.svg#HelveticaNeueCyrBold') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrMedium';
+    src: url('../fonts/Helvetica/HelveticaNeueCyrMedium.eot');
+    src: url('../fonts/Helvetica/HelveticaNeueCyrMedium.eot') format('embedded-opentype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrMedium.woff2') format('woff2'),
+         url('../fonts/Helvetica/HelveticaNeueCyrMedium.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyrMedium.ttf') format('truetype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrMedium.svg#HelveticaNeueCyrMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrRoman';
+    src: url('../fonts/Helvetica/HelveticaNeueCyrRoman.eot');
+    src: url('../fonts/Helvetica/HelveticaNeueCyrRoman.eot') format('embedded-opentype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrRoman.woff2') format('woff2'),
+         url('../fonts/Helvetica/HelveticaNeueCyrRoman.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyrRoman.ttf') format('truetype'),
+         url('../fonts/Helvetica/HelveticaNeueCyrRoman.svg#HelveticaNeueCyrThin') format('svg');
+}
+
+
+
