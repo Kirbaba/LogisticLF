@@ -17,9 +17,11 @@
 					<div class="page-single__content">
 						<!-- open .page-presscenter__item -->
 							<span class="page-presscenter__item_date">25 апреля 2016г.</span>
-							<h5>ТРЦ Ocean Plaza стал лауреатом Украины «Выбор потребителя»</h5>
+					cpv		<h5>ТРЦ Ocean Plaza стал лауреатом Украины «Выбор потребителя»</h5>
 							<!-- open .page-presscenter__item_thumb -->
-							<div class="page-single__thumb"><img src="<?php bloginfo('template_directory'); ?>/img/Layer-42.png" alt="" /></div>
+							<div class="page-single__thumb">
+								<img src="<?php bloginfo('template_directory'); ?>/img/Layer-42.png" alt="" />
+							</div>
 							<!-- close .page-presscenter__item_thumb -->
 							<p>Компания «Логистик Л7» оказывает логистические услуги на территории Перми и Пермского края,
 							Республики Удмуртия, Екатеринбурга и Свердловской области и осуществляет грузоперевозки и 

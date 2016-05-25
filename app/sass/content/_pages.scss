@@ -309,13 +309,15 @@
 			width: 50%;
 			margin-bottom: 25px;
 			&_item {
-				float: left;
+				display: inline-block;				
 				width: 50%;
 				-webkit-box-sizing: border-box;
 				   -moz-box-sizing: border-box;
 				        box-sizing: border-box;
-				padding-right: 25%;
+				padding-right: 20%;
 				margin: 15px 0;
+				margin-right: -4px;
+				vertical-align: top;
 				h2 {
 					font-size: 100px;
 					color: #DF0028;
@@ -343,6 +345,35 @@
 				-webkit-background-size: 30px 20px;
 				     -o-background-size: 30px 20px;
 				        background-size: 30px 20px;
+			}
+		}
+	}
+
+	&-cottage {
+		margin-bottom: 50px;
+		&__thumb {
+			@extend .page-single__thumb;
+			height: 300px;
+		}
+		&__info {
+			float: left;
+			width: 50%;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding-right: 75px;
+			margin-bottom: 25px;
+			img {
+				max-width: 100%;
+				margin: 25px 0;
+			}
+		}
+		.page-partner__numbers_item {
+			margin-top: 0;
+			margin-bottom: 25px;
+			h2 {
+				margin-top: 0px;
+				margin-bottom: 0;
 			}
 		}
 	}
