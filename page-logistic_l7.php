@@ -111,26 +111,3 @@
 	<!-- close .page-content -->
 <? get_footer() ?>
 
-<!-- open .first__partners_wrap -->
-<div class="first__partners_wrap">
-	<a href="#" class="first__partners_item">
-		<img src="<?php bloginfo('template_directory'); ?>/img/Shape-1-3.png" alt="" />
-	</a>
-	<a href="#" class="first__partners_item">
-		<img src="<?php bloginfo('template_directory'); ?>/img/Shape-1-3.png" alt="" />
-	</a>
-	<a href="#" class="first__partners_item">
-		<img src="<?php bloginfo('template_directory'); ?>/img/Shape-1-3.png" alt="" />
-	</a>
-	<a href="#" class="first__partners_item">
-		<img src="<?php bloginfo('template_directory'); ?>/img/Shape-1-3.png" alt="" />
-	</a>
-	<a href="#" class="first__partners_item">
-		<img src="<?php bloginfo('template_directory'); ?>/img/Shape-1-3.png" alt="" />
-	</a>
-	<a href="#" class="first__partners_item">
-		<img src="<?php bloginfo('template_directory'); ?>/img/Shape-1-3.png" alt="" />
-	</a>
-</div>
-<!-- close .first__partners_wrap -->
-

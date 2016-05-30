@@ -21,17 +21,20 @@
 				</a>
 			</div>
 			<div class="header__menu">
-				<div class="header__menu__phone">
-					<h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-01</h3>
-				</div>
+				
                 <?php
 					if(is_front_page()){
-						wp_nav_menu( array( 'theme_location' => 'main_menu','container' => 'nav', 'container_class' => 'navigation') );
+						wp_nav_menu( array( 'theme_location' => 'main_menu','container' => 'nav', 'container_class' => 'navigation home-nav') );
 					}else{
 						wp_nav_menu( array( 'theme_location' => 'header_menu','container' => 'nav', 'container_class' => 'navigation') );
-
 					}
+
+
 				?>
+        <div class="header__menu__phone">
+            <h3><span class="header__menu__phone-icon"></span>8 (342) 218-17-01</h3>
+            <p>Телефон в Перми</p>
+          </div>
 <!--				<nav class="navigation">-->
 <!--					<ul>-->
 <!--						<li><a href="--><?php //echo get_permalink(9); ?><!--">О компании </a>-->
@@ -164,61 +167,63 @@
               <h1>Остались вопросы?</h1>
               <div class="serv__block--line"></div>
               <div class="questions__block">
-              <!--   <form action="#nowhere">
-                <div class="questions__block--left">
-                  <input type="text" class="questions__block--inp" placeholder="Ваше имя">
-                  <input type="text" class="questions__block--inp" placeholder="Почта или телефон для ответа">
-                </div>
-                <div class="questions__block--right">
-                  <textarea name="mes" class="questions__block--txt" placeholder="Сообщение"></textarea>
-                </div>
-                <input type="submit" class="questions__block--sub" value="ОТПРАВИТЬ">
-              </form> -->
+             <!--  <form action="#nowhere">
+               <div class="questions__block--left">
+                 <input type="text" class="questions__block--inp" placeholder="Ваше имя">
+                 <input type="text" class="questions__block--inp" placeholder="Почта или телефон для ответа">
+               </div>
+               <div class="questions__block--right">
+                 <textarea name="mes" class="questions__block--txt" placeholder="Сообщение"></textarea>
+               </div>
+               <input type="submit" class="questions__block--sub" value="ОТПРАВИТЬ">
+             </form> -->
                 <?php echo do_shortcode("[contact-form-7 id='29' title='Form']"); ?>
               </div>
             </div>
           </section>		
 
-          <footer class="footer">
-            <div class="contain"> 
-              <div class="footer__logo">
-                <a href="<?php echo get_home_url();?>">
-                  <img src="<?php bloginfo('template_directory'); ?>/img/logo_footer.png" alt="">
-                </a>
-              </div>
-              <div class="footer__menu">
-				  <?php
-				  if(is_front_page()){
-					  wp_nav_menu( array( 'theme_location' => 'main_footer_menu','container' => 'nav', 'container_class' => 'navigation') );
-				  }else{
-					  wp_nav_menu( array( 'theme_location' => 'footer_menu','container' => 'nav', 'container_class' => 'navigation') );
-				  }
-				  ?>
+          <? get_footer() ?>
 
-<!--                  <nav class="navigation">-->
-<!--                  <ul>-->
-<!--                    <li><a href="--><?php //echo get_permalink(9); ?><!--" class="smoothScroll">О компании </a>-->
-<!--                      <ul>-->
-<!--                        <li><a href="--><?php //echo get_permalink(18); ?><!--">История</a></li>-->
-<!--                        <li><a href="--><?php //echo get_permalink(20); ?><!--">Автопарк</a></li>-->
-<!--                        <li><a href="--><?php //echo get_permalink(22); ?><!--">Склады</a></li>-->
-<!--                        <li><a href="--><?php //echo get_permalink(24); ?><!--">Наши партнеры</a></li>-->
-<!--                        <li><a href="--><?php //echo get_permalink(26); ?><!--">Презинтация</a></li>-->
-<!--                      </ul>-->
-<!--                    </li>-->
-<!--                    <li><a href="--><?php //echo get_permalink(11); ?><!--">Услуги</a></li>-->
-<!--                    <li><a href="--><?php //echo get_permalink(13); ?><!--">География</a></li>-->
-<!--                    <li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>-->
-<!--                    <li><a href="--><?php //echo get_permalink(15); ?><!--">Контакты</a></li>-->
-<!--                  </ul>-->
-<!--                </nav>-->
-              </div>
-              <div class="footer__phone">
-                <h3><span class="footer__phone-icon"></span>8 (342) 218-17-01</h3>
-<!--                <p>Телефон в Перми</p>-->
-              </div>              
-            </div>  
-          </footer>
-<?php wp_footer(); ?>
-</body>
-</html>
+        <!--  <footer class="footer">
+          <div class="contain"> 
+            <div class="footer__logo">
+              <a href="<?php echo get_home_url();?>">
+                <img src="<?php bloginfo('template_directory'); ?>/img/logo_footer.png" alt="">
+              </a>
+            </div>
+            <div class="footer__menu">
+                  <?php
+                  if(is_front_page()){
+                    wp_nav_menu( array( 'theme_location' => 'main_footer_menu','container' => 'nav', 'container_class' => 'navigation') );
+                  }else{
+                    wp_nav_menu( array( 'theme_location' => 'footer_menu','container' => 'nav', 'container_class' => 'navigation') );
+                  }
+                  ?>
+        
+        <nav class="navigation">
+        <ul>
+        <li><a href="<?php //echo get_permalink(9); ?>" class="smoothScroll">О компании </a>
+        <ul>
+        <li><a href="<?php //echo get_permalink(18); ?>">История</a></li>
+        <li><a href="<?php //echo get_permalink(20); ?>">Автопарк</a></li>
+        <li><a href="<?php //echo get_permalink(22); ?>">Склады</a></li>
+        <li><a href="<?php //echo get_permalink(24); ?>">Наши партнеры</a></li>
+        <li><a href="<?php //echo get_permalink(26); ?>">Презинтация</a></li>
+        </ul>
+        </li>
+        <li><a href="<?php //echo get_permalink(11); ?>">Услуги</a></li>
+        <li><a href="<?php //echo get_permalink(13); ?>">География</a></li>
+        <li><a href="#to_cont"  class="smoothScroll">Обратная связь </a></li>
+        <li><a href="<?php //echo get_permalink(15); ?>">Контакты</a></li>
+        </ul>
+        </nav>
+            </div>
+            <div class="footer__phone">
+              <h3><span class="footer__phone-icon"></span>8 (342) 218-17-01</h3>
+        <p>Телефон в Перми</p>
+            </div>              
+          </div>  
+        </footer>
+        <?php wp_footer(); ?>
+        </body>
+        </html> -->

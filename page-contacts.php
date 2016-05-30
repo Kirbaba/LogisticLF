@@ -13,9 +13,9 @@
 				<div class="contacts__content">
 					<select name="contacts__content-region" id="contacts__content-region" class="contacts__content_region">
 						<option value="">Выбор региона</option>
-						<option value="Москва">Москва</option>
-						<option value="Санкт-Петербург">Санкт-Петербург</option>
-						<option value="Пермь">Пермь</option>
+						<option value="58.021782, 56.169313" data-marker="58.021782, 56.165313">Москва</option>
+						<option value="58.031782, 56.189313" data-marker="58.031782, 56.185313">Санкт-Петербург</option>
+						<option value="50.021782, 53.169313" data-marker="50.021782, 53.165313">Пермь</option>
 					</select>
 					<!-- open .contacts__content_offices -->
 					<div class="contacts__content_offices">
